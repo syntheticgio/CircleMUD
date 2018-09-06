@@ -102,6 +102,7 @@ const char *trade_letters[] = {
         "Cleric",
         "Thief",
         "Warrior",
+        "Ranger",
         "\n"
 };
 
@@ -137,7 +138,8 @@ int is_ok_char(struct char_data *keeper, struct char_data *ch, int shop_nr)
   if ((IS_MAGIC_USER(ch) && NOTRADE_MAGIC_USER(shop_nr)) ||
       (IS_CLERIC(ch) && NOTRADE_CLERIC(shop_nr)) ||
       (IS_THIEF(ch) && NOTRADE_THIEF(shop_nr)) ||
-      (IS_WARRIOR(ch) && NOTRADE_WARRIOR(shop_nr))) {
+      (IS_WARRIOR(ch) && NOTRADE_WARRIOR(shop_nr)) ||
+      (IS_RANGER(ch) && NOTRADE_RANGER(shop_nr))) {
     snprintf(buf, sizeof(buf), "%s %s", GET_NAME(ch), MSG_NO_SELL_CLASS);
     do_tell(keeper, buf, cmd_tell, 0);
     return (FALSE);
@@ -187,7 +189,7 @@ int top(struct stack_data *stack)
   if (S_LEN(stack) > 0)
     return (S_DATA(stack, S_LEN(stack) - 1));
   else
-    return (NOTHING);
+    return (-1);
 }
 
 
@@ -276,10 +278,10 @@ int evaluate_expression(struct obj_data *obj, char *expr)
       }
     }
   }
-  while (top(&ops) != NOTHING)
+  while (top(&ops) != -1)
     evaluate_operation(&ops, &vals);
   temp = pop(&vals);
-  if (top(&vals) != NOTHING) {
+  if (top(&vals) != -1) {
     log("SYSERR: Extra operands left on shop keyword expression stack.");
     return (FALSE);
   }
@@ -979,7 +981,7 @@ SPECIAL(shop_keeper)
   } else if (CMD_IS("sell")) {
     shopping_sell(argument, ch, keeper, shop_nr);
     return (TRUE);
-  } else if (CMD_IS("value")) {
+  } else if (CMD_IS("value") || CMD_IS("appraise")) {
     shopping_value(argument, ch, keeper, shop_nr);
     return (TRUE);
   } else if (CMD_IS("list")) {
@@ -1019,7 +1021,7 @@ int ok_damage_shopkeeper(struct char_data *ch, struct char_data *victim)
 /* val == obj_vnum and obj_rnum (?) */
 int add_to_list(struct shop_buy_data *list, int type, int *len, int *val)
 {
-  if (*val != NOTHING) {
+  if (*val != NOTHING && *val >= 0) { /* necessary after changing to unsigned v/rnums -- Welcor */
     if (*len < MAX_SHOP_OBJ) {
       if (type == LIST_PRODUCE)
 	*val = real_object(*val);
@@ -1096,9 +1098,9 @@ int read_type_list(FILE *shop_f, struct shop_buy_data *list,
     else
       *(END_OF(buf) - 1) = '\0';
 
-    num = NOTHING;
+    num = -1;
 
-    if (strncmp(buf, "-1", 4) != 0)
+    if (strncmp(buf, "-1", 2) != 0)
       for (tindex = 0; *item_types[tindex] != '\n'; tindex++)
         if (!strn_cmp(item_types[tindex], buf, strlen(item_types[tindex]))) {
           num = tindex;
@@ -1107,7 +1109,7 @@ int read_type_list(FILE *shop_f, struct shop_buy_data *list,
         }
 
     ptr = buf;
-    if (num == NOTHING) {
+    if (num == -1) {
       sscanf(buf, "%d", &num);
       while (!isdigit(*ptr))
 	ptr++;
@@ -1207,7 +1209,7 @@ void boot_the_shops(FILE *shop_f, char *filename, int rec_count)
       shop_index[top_shop].message_buy = read_shop_message(5, SHOP_NUM(top_shop), shop_f, buf2);
       shop_index[top_shop].message_sell = read_shop_message(6, SHOP_NUM(top_shop), shop_f, buf2);
       read_line(shop_f, "%d", &SHOP_BROKE_TEMPER(top_shop));
-      read_line(shop_f, "%d", &SHOP_BITVECTOR(top_shop));
+      read_line(shop_f, "%ld", &SHOP_BITVECTOR(top_shop));
       read_line(shop_f, "%hd", &SHOP_KEEPER(top_shop));
 
       SHOP_KEEPER(top_shop) = real_mobile(SHOP_KEEPER(top_shop));
@@ -1529,4 +1531,16 @@ void destroy_shops(void)
   free(shop_index);
   shop_index = NULL;
   top_shop = -1;
+}
+
+
+int count_shops(shop_vnum low, shop_vnum high)
+{
+  int i, j;
+  
+  for (i = j = 0; SHOP_NUM(i) <= high; i++)
+    if (SHOP_NUM(i) >= low)
+      j++;
+ 
+  return j;
 }

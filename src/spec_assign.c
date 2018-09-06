@@ -18,7 +18,6 @@
 
 
 /* external globals */
-extern int dts_are_dumps;
 extern int mini_mud;
 
 /* external functions */
@@ -47,6 +46,7 @@ void assign_objects(void);
 void assign_rooms(void);
 void ASSIGNROOM(room_vnum room, SPECIAL(fname));
 void ASSIGNMOB(mob_vnum mob, SPECIAL(fname));
+//   void ASSIGNMOB(mob_vnum mob, int fname(struct char_data *ch, void *me, int cmd, char *argument)
 void ASSIGNOBJ(obj_vnum obj, SPECIAL(fname));
 
 /* functions to perform assignments */
@@ -300,7 +300,7 @@ void assign_rooms(void)
   ASSIGNROOM(3030, dump);
   ASSIGNROOM(3031, pet_shops);
 
-  if (dts_are_dumps)
+  if (CONFIG_DTS_ARE_DUMPS)
     for (i = 0; i <= top_of_world; i++)
       if (ROOM_FLAGGED(i, ROOM_DEATH))
 	world[i].func = dump;

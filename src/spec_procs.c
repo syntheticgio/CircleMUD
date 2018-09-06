@@ -45,6 +45,7 @@ SPECIAL(thief);
 SPECIAL(magic_user);
 SPECIAL(guild_guard);
 SPECIAL(puff);
+//   int puff(struct char_data *ch, void *me, int cmd, char *argument);
 SPECIAL(fido);
 SPECIAL(janitor);
 SPECIAL(cityguard);
@@ -122,8 +123,8 @@ extern int prac_params[4][NUM_CLASSES];
 void list_skills(struct char_data *ch)
 {
   const char *overflow = "\r\n**OVERFLOW**\r\n";
-  int i, sortpos, nlen;
-  size_t len = 0;
+  int i, sortpos;
+  size_t len = 0, nlen;
   char buf2[MAX_STRING_LENGTH];
 
   if (!GET_PRACTICES(ch)) {
