@@ -1,0 +1,5 @@
+src/*.o
+src/*.orig
+bin/*
+lib/etc/board.immort
+config.*
