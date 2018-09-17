@@ -54,7 +54,7 @@ message Object {
 	string action_description_to_sleep = 8;
 
 	enum TypeFlag {
-		NONE = 0;
+		NOFLAG = 0;
 		LIGHT = 1;
 		SCROLL = 2;
 		WAND = 3;

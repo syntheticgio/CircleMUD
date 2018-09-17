@@ -32,6 +32,22 @@ const ::google::protobuf::EnumDescriptor* Zone_ResetMode_descriptor_ = NULL;
 const ::google::protobuf::Descriptor* ZoneList_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   ZoneList_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Object_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Object_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Object_ExtraDescription_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Object_ExtraDescription_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Object_ObjectAffect_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Object_ObjectAffect_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* Object_TypeFlag_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* Object_EffectsBitvector_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* Object_WearBitvector_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* Object_AffectTarget_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* ObjectList_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ObjectList_reflection_ = NULL;
 
 }  // namespace
 
@@ -103,6 +119,88 @@ void protobuf_AssignDesc_dawnmud_2eproto() {
       sizeof(ZoneList),
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ZoneList, _internal_metadata_),
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ZoneList, _is_default_instance_));
+  Object_descriptor_ = file->message_type(2);
+  static const int Object_offsets_[17] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, number_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, alias_list_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, short_description_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, long_description_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, action_description_to_room_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, action_description_to_vict_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, action_description_to_char_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, action_description_to_sleep_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, type_flags_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, effects_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, wear_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, value_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, weight_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, cost_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, rent_per_day_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, extra_descriptions_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, object_affects_),
+  };
+  Object_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Object_descriptor_,
+      Object::default_instance_,
+      Object_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Object),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, _internal_metadata_),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object, _is_default_instance_));
+  Object_ExtraDescription_descriptor_ = Object_descriptor_->nested_type(0);
+  static const int Object_ExtraDescription_offsets_[2] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object_ExtraDescription, keyword_list_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object_ExtraDescription, description_text_),
+  };
+  Object_ExtraDescription_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Object_ExtraDescription_descriptor_,
+      Object_ExtraDescription::default_instance_,
+      Object_ExtraDescription_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Object_ExtraDescription),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object_ExtraDescription, _internal_metadata_),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object_ExtraDescription, _is_default_instance_));
+  Object_ObjectAffect_descriptor_ = Object_descriptor_->nested_type(1);
+  static const int Object_ObjectAffect_offsets_[2] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object_ObjectAffect, target_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object_ObjectAffect, affect_),
+  };
+  Object_ObjectAffect_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Object_ObjectAffect_descriptor_,
+      Object_ObjectAffect::default_instance_,
+      Object_ObjectAffect_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Object_ObjectAffect),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object_ObjectAffect, _internal_metadata_),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Object_ObjectAffect, _is_default_instance_));
+  Object_TypeFlag_descriptor_ = Object_descriptor_->enum_type(0);
+  Object_EffectsBitvector_descriptor_ = Object_descriptor_->enum_type(1);
+  Object_WearBitvector_descriptor_ = Object_descriptor_->enum_type(2);
+  Object_AffectTarget_descriptor_ = Object_descriptor_->enum_type(3);
+  ObjectList_descriptor_ = file->message_type(3);
+  static const int ObjectList_offsets_[1] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ObjectList, object_),
+  };
+  ObjectList_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ObjectList_descriptor_,
+      ObjectList::default_instance_,
+      ObjectList_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ObjectList),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ObjectList, _internal_metadata_),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ObjectList, _is_default_instance_));
 }
 
 namespace {
@@ -122,6 +220,14 @@ void protobuf_RegisterTypes(const ::std::string&) {
       Zone_ResetCommands_descriptor_, &Zone_ResetCommands::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
       ZoneList_descriptor_, &ZoneList::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Object_descriptor_, &Object::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Object_ExtraDescription_descriptor_, &Object_ExtraDescription::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Object_ObjectAffect_descriptor_, &Object_ObjectAffect::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ObjectList_descriptor_, &ObjectList::default_instance());
 }
 
 }  // namespace
@@ -133,6 +239,14 @@ void protobuf_ShutdownFile_dawnmud_2eproto() {
   delete Zone_ResetCommands_reflection_;
   delete ZoneList::default_instance_;
   delete ZoneList_reflection_;
+  delete Object::default_instance_;
+  delete Object_reflection_;
+  delete Object_ExtraDescription::default_instance_;
+  delete Object_ExtraDescription_reflection_;
+  delete Object_ObjectAffect::default_instance_;
+  delete Object_ObjectAffect_reflection_;
+  delete ObjectList::default_instance_;
+  delete ObjectList_reflection_;
 }
 
 void protobuf_AddDesc_dawnmud_2eproto() GOOGLE_ATTRIBUTE_COLD;
@@ -158,15 +272,71 @@ void protobuf_AddDesc_dawnmud_2eproto() {
     "\n\016OBJ_CHAR_EQUIP\020\005\022\021\n\rSTATE_OF_DOOR\020\006\"4\n"
     "\tResetMode\022\014\n\010NO_RESET\020\000\022\t\n\005RESET\020\001\022\016\n\nH"
     "ARD_RESET\020\002\"\'\n\010ZoneList\022\033\n\004zone\030\001 \003(\0132\r."
-    "DawnMud.Zoneb\006proto3", 620);
+    "DawnMud.Zone\"\325\016\n\006Object\022\016\n\006number\030\001 \001(\021\022"
+    "\022\n\nalias_list\030\002 \003(\t\022\031\n\021short_description"
+    "\030\003 \001(\t\022\030\n\020long_description\030\004 \001(\t\022\"\n\032acti"
+    "on_description_to_room\030\005 \001(\t\022\"\n\032action_d"
+    "escription_to_vict\030\006 \001(\t\022\"\n\032action_descr"
+    "iption_to_char\030\007 \001(\t\022#\n\033action_descripti"
+    "on_to_sleep\030\010 \001(\t\022,\n\ntype_flags\030\t \003(\0162\030."
+    "DawnMud.Object.TypeFlag\0221\n\007effects\030\n \003(\016"
+    "2 .DawnMud.Object.EffectsBitvector\022+\n\004we"
+    "ar\030\013 \003(\0162\035.DawnMud.Object.WearBitvector\022"
+    "\r\n\005value\030\014 \003(\021\022\016\n\006weight\030\r \001(\001\022\014\n\004cost\030\016"
+    " \001(\001\022\024\n\014rent_per_day\030\017 \001(\001\022<\n\022extra_desc"
+    "riptions\030\020 \003(\0132 .DawnMud.Object.ExtraDes"
+    "cription\0224\n\016object_affects\030\021 \003(\0132\034.DawnM"
+    "ud.Object.ObjectAffect\032B\n\020ExtraDescripti"
+    "on\022\024\n\014keyword_list\030\001 \003(\t\022\030\n\020description_"
+    "text\030\002 \001(\t\032L\n\014ObjectAffect\022,\n\006target\030\001 \001"
+    "(\0162\034.DawnMud.Object.AffectTarget\022\016\n\006affe"
+    "ct\030\002 \001(\021\"\240\002\n\010TypeFlag\022\n\n\006NOFLAG\020\000\022\t\n\005LIG"
+    "HT\020\001\022\n\n\006SCROLL\020\002\022\010\n\004WAND\020\003\022\t\n\005STAFF\020\004\022\n\n"
+    "\006WEAPON\020\005\022\016\n\nFIREWEAPON\020\006\022\013\n\007MISSILE\020\007\022\014"
+    "\n\010TREASURE\020\010\022\t\n\005ARMOR\020\t\022\n\n\006POTION\020\n\022\010\n\004W"
+    "ORN\020\013\022\t\n\005OTHER\020\014\022\t\n\005TRASH\020\r\022\010\n\004TRAP\020\016\022\r\n"
+    "\tCONTAINER\020\017\022\010\n\004NOTE\020\020\022\014\n\010DRINKCON\020\021\022\007\n\003"
+    "KEY\020\022\022\010\n\004FOOD\020\023\022\t\n\005MONEY\020\024\022\007\n\003PEN\020\025\022\010\n\004B"
+    "OAT\020\026\022\014\n\010FOUNTAIN\020\027\"\241\002\n\020EffectsBitvector"
+    "\022\r\n\tNO_EFFECT\020\000\022\010\n\004GLOW\020\001\022\007\n\003HUM\020\002\022\n\n\006NO"
+    "RENT\020\003\022\014\n\010NODONATE\020\004\022\013\n\007NOINVIS\020\005\022\r\n\tINV"
+    "ISIBLE\020\006\022\t\n\005MAGIC\020\007\022\n\n\006NODROP\020\010\022\t\n\005BLESS"
+    "\020\t\022\r\n\tANTI_GOOD\020\n\022\r\n\tANTI_EVIL\020\013\022\020\n\014ANTI"
+    "_NEUTRAL\020\014\022\023\n\017ANTI_MAGIC_USER\020\r\022\017\n\013ANTI_"
+    "CLERIC\020\016\022\016\n\nANTI_THIEF\020\017\022\020\n\014ANTI_WARRIOR"
+    "\020\020\022\n\n\006NOSELL\020\021\022\017\n\013ANTI_RANGER\020\022\"\206\002\n\rWear"
+    "Bitvector\022\013\n\007NO_WEAR\020\000\022\r\n\tWEAR_TAKE\020\001\022\017\n"
+    "\013WEAR_FINGER\020\002\022\r\n\tWEAR_NECK\020\003\022\r\n\tWEAR_BO"
+    "DY\020\004\022\r\n\tWEAR_HEAD\020\005\022\r\n\tWEAR_LEGS\020\006\022\r\n\tWE"
+    "AR_FEET\020\007\022\016\n\nWEAR_HANDS\020\010\022\r\n\tWEAR_ARMS\020\t"
+    "\022\017\n\013WEAR_SHIELD\020\n\022\016\n\nWEAR_ABOUT\020\013\022\016\n\nWEA"
+    "R_WAIST\020\014\022\016\n\nWEAR_WRIST\020\r\022\016\n\nWEAR_WIELD\020"
+    "\016\022\r\n\tWEAR_HOLD\020\017\"\271\002\n\014AffectTarget\022\010\n\004NON"
+    "E\020\000\022\007\n\003STR\020\001\022\007\n\003DEX\020\002\022\007\n\003INT\020\003\022\007\n\003WIS\020\004\022"
+    "\007\n\003CON\020\005\022\007\n\003CHA\020\006\022\t\n\005CLASS\020\007\022\t\n\005LEVEL\020\010\022"
+    "\007\n\003AGE\020\t\022\017\n\013CHAR_WEIGHT\020\n\022\017\n\013CHAR_HEIGHT"
+    "\020\013\022\010\n\004MANA\020\014\022\007\n\003HIT\020\r\022\010\n\004MOVE\020\016\022\010\n\004GOLD\020"
+    "\017\022\007\n\003EXP\020\020\022\006\n\002AC\020\021\022\013\n\007HITROLL\020\022\022\013\n\007DAMRO"
+    "LL\020\023\022\017\n\013SAVING_PARA\020\024\022\016\n\nSAVING_ROD\020\025\022\020\n"
+    "\014SAVING_PETRI\020\026\022\021\n\rSAVING_BREATH\020\027\022\020\n\014SA"
+    "VING_SPELL\020\030\"-\n\nObjectList\022\037\n\006object\030\001 \003"
+    "(\0132\017.DawnMud.Objectb\006proto3", 2547);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "dawnmud.proto", &protobuf_RegisterTypes);
   Zone::default_instance_ = new Zone();
   Zone_ResetCommands::default_instance_ = new Zone_ResetCommands();
   ZoneList::default_instance_ = new ZoneList();
+  Object::default_instance_ = new Object();
+  Object_ExtraDescription::default_instance_ = new Object_ExtraDescription();
+  Object_ObjectAffect::default_instance_ = new Object_ObjectAffect();
+  ObjectList::default_instance_ = new ObjectList();
   Zone::default_instance_->InitAsDefaultInstance();
   Zone_ResetCommands::default_instance_->InitAsDefaultInstance();
   ZoneList::default_instance_->InitAsDefaultInstance();
+  Object::default_instance_->InitAsDefaultInstance();
+  Object_ExtraDescription::default_instance_->InitAsDefaultInstance();
+  Object_ObjectAffect::default_instance_->InitAsDefaultInstance();
+  ObjectList::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_dawnmud_2eproto);
 }
 
@@ -1798,6 +1968,2855 @@ const ::google::protobuf::RepeatedPtrField< ::DawnMud::Zone >&
 ZoneList::zone() const {
   // @@protoc_insertion_point(field_list:DawnMud.ZoneList.zone)
   return zone_;
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+
+// ===================================================================
+
+const ::google::protobuf::EnumDescriptor* Object_TypeFlag_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return Object_TypeFlag_descriptor_;
+}
+bool Object_TypeFlag_IsValid(int value) {
+  switch(value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+    case 18:
+    case 19:
+    case 20:
+    case 21:
+    case 22:
+    case 23:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const Object_TypeFlag Object::NOFLAG;
+const Object_TypeFlag Object::LIGHT;
+const Object_TypeFlag Object::SCROLL;
+const Object_TypeFlag Object::WAND;
+const Object_TypeFlag Object::STAFF;
+const Object_TypeFlag Object::WEAPON;
+const Object_TypeFlag Object::FIREWEAPON;
+const Object_TypeFlag Object::MISSILE;
+const Object_TypeFlag Object::TREASURE;
+const Object_TypeFlag Object::ARMOR;
+const Object_TypeFlag Object::POTION;
+const Object_TypeFlag Object::WORN;
+const Object_TypeFlag Object::OTHER;
+const Object_TypeFlag Object::TRASH;
+const Object_TypeFlag Object::TRAP;
+const Object_TypeFlag Object::CONTAINER;
+const Object_TypeFlag Object::NOTE;
+const Object_TypeFlag Object::DRINKCON;
+const Object_TypeFlag Object::KEY;
+const Object_TypeFlag Object::FOOD;
+const Object_TypeFlag Object::MONEY;
+const Object_TypeFlag Object::PEN;
+const Object_TypeFlag Object::BOAT;
+const Object_TypeFlag Object::FOUNTAIN;
+const Object_TypeFlag Object::TypeFlag_MIN;
+const Object_TypeFlag Object::TypeFlag_MAX;
+const int Object::TypeFlag_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+const ::google::protobuf::EnumDescriptor* Object_EffectsBitvector_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return Object_EffectsBitvector_descriptor_;
+}
+bool Object_EffectsBitvector_IsValid(int value) {
+  switch(value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+    case 18:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const Object_EffectsBitvector Object::NO_EFFECT;
+const Object_EffectsBitvector Object::GLOW;
+const Object_EffectsBitvector Object::HUM;
+const Object_EffectsBitvector Object::NORENT;
+const Object_EffectsBitvector Object::NODONATE;
+const Object_EffectsBitvector Object::NOINVIS;
+const Object_EffectsBitvector Object::INVISIBLE;
+const Object_EffectsBitvector Object::MAGIC;
+const Object_EffectsBitvector Object::NODROP;
+const Object_EffectsBitvector Object::BLESS;
+const Object_EffectsBitvector Object::ANTI_GOOD;
+const Object_EffectsBitvector Object::ANTI_EVIL;
+const Object_EffectsBitvector Object::ANTI_NEUTRAL;
+const Object_EffectsBitvector Object::ANTI_MAGIC_USER;
+const Object_EffectsBitvector Object::ANTI_CLERIC;
+const Object_EffectsBitvector Object::ANTI_THIEF;
+const Object_EffectsBitvector Object::ANTI_WARRIOR;
+const Object_EffectsBitvector Object::NOSELL;
+const Object_EffectsBitvector Object::ANTI_RANGER;
+const Object_EffectsBitvector Object::EffectsBitvector_MIN;
+const Object_EffectsBitvector Object::EffectsBitvector_MAX;
+const int Object::EffectsBitvector_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+const ::google::protobuf::EnumDescriptor* Object_WearBitvector_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return Object_WearBitvector_descriptor_;
+}
+bool Object_WearBitvector_IsValid(int value) {
+  switch(value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const Object_WearBitvector Object::NO_WEAR;
+const Object_WearBitvector Object::WEAR_TAKE;
+const Object_WearBitvector Object::WEAR_FINGER;
+const Object_WearBitvector Object::WEAR_NECK;
+const Object_WearBitvector Object::WEAR_BODY;
+const Object_WearBitvector Object::WEAR_HEAD;
+const Object_WearBitvector Object::WEAR_LEGS;
+const Object_WearBitvector Object::WEAR_FEET;
+const Object_WearBitvector Object::WEAR_HANDS;
+const Object_WearBitvector Object::WEAR_ARMS;
+const Object_WearBitvector Object::WEAR_SHIELD;
+const Object_WearBitvector Object::WEAR_ABOUT;
+const Object_WearBitvector Object::WEAR_WAIST;
+const Object_WearBitvector Object::WEAR_WRIST;
+const Object_WearBitvector Object::WEAR_WIELD;
+const Object_WearBitvector Object::WEAR_HOLD;
+const Object_WearBitvector Object::WearBitvector_MIN;
+const Object_WearBitvector Object::WearBitvector_MAX;
+const int Object::WearBitvector_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+const ::google::protobuf::EnumDescriptor* Object_AffectTarget_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return Object_AffectTarget_descriptor_;
+}
+bool Object_AffectTarget_IsValid(int value) {
+  switch(value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+    case 18:
+    case 19:
+    case 20:
+    case 21:
+    case 22:
+    case 23:
+    case 24:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const Object_AffectTarget Object::NONE;
+const Object_AffectTarget Object::STR;
+const Object_AffectTarget Object::DEX;
+const Object_AffectTarget Object::INT;
+const Object_AffectTarget Object::WIS;
+const Object_AffectTarget Object::CON;
+const Object_AffectTarget Object::CHA;
+const Object_AffectTarget Object::CLASS;
+const Object_AffectTarget Object::LEVEL;
+const Object_AffectTarget Object::AGE;
+const Object_AffectTarget Object::CHAR_WEIGHT;
+const Object_AffectTarget Object::CHAR_HEIGHT;
+const Object_AffectTarget Object::MANA;
+const Object_AffectTarget Object::HIT;
+const Object_AffectTarget Object::MOVE;
+const Object_AffectTarget Object::GOLD;
+const Object_AffectTarget Object::EXP;
+const Object_AffectTarget Object::AC;
+const Object_AffectTarget Object::HITROLL;
+const Object_AffectTarget Object::DAMROLL;
+const Object_AffectTarget Object::SAVING_PARA;
+const Object_AffectTarget Object::SAVING_ROD;
+const Object_AffectTarget Object::SAVING_PETRI;
+const Object_AffectTarget Object::SAVING_BREATH;
+const Object_AffectTarget Object::SAVING_SPELL;
+const Object_AffectTarget Object::AffectTarget_MIN;
+const Object_AffectTarget Object::AffectTarget_MAX;
+const int Object::AffectTarget_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int Object_ExtraDescription::kKeywordListFieldNumber;
+const int Object_ExtraDescription::kDescriptionTextFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+Object_ExtraDescription::Object_ExtraDescription()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:DawnMud.Object.ExtraDescription)
+}
+
+void Object_ExtraDescription::InitAsDefaultInstance() {
+  _is_default_instance_ = true;
+}
+
+Object_ExtraDescription::Object_ExtraDescription(const Object_ExtraDescription& from)
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:DawnMud.Object.ExtraDescription)
+}
+
+void Object_ExtraDescription::SharedCtor() {
+    _is_default_instance_ = false;
+  ::google::protobuf::internal::GetEmptyString();
+  _cached_size_ = 0;
+  description_text_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+Object_ExtraDescription::~Object_ExtraDescription() {
+  // @@protoc_insertion_point(destructor:DawnMud.Object.ExtraDescription)
+  SharedDtor();
+}
+
+void Object_ExtraDescription::SharedDtor() {
+  description_text_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (this != default_instance_) {
+  }
+}
+
+void Object_ExtraDescription::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* Object_ExtraDescription::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return Object_ExtraDescription_descriptor_;
+}
+
+const Object_ExtraDescription& Object_ExtraDescription::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_dawnmud_2eproto();
+  return *default_instance_;
+}
+
+Object_ExtraDescription* Object_ExtraDescription::default_instance_ = NULL;
+
+Object_ExtraDescription* Object_ExtraDescription::New(::google::protobuf::Arena* arena) const {
+  Object_ExtraDescription* n = new Object_ExtraDescription;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void Object_ExtraDescription::Clear() {
+// @@protoc_insertion_point(message_clear_start:DawnMud.Object.ExtraDescription)
+  description_text_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  keyword_list_.Clear();
+}
+
+bool Object_ExtraDescription::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:DawnMud.Object.ExtraDescription)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // repeated string keyword_list = 1;
+      case 1: {
+        if (tag == 10) {
+         parse_keyword_list:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_keyword_list()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->keyword_list(this->keyword_list_size() - 1).data(),
+            this->keyword_list(this->keyword_list_size() - 1).length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "DawnMud.Object.ExtraDescription.keyword_list"));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(10)) goto parse_keyword_list;
+        if (input->ExpectTag(18)) goto parse_description_text;
+        break;
+      }
+
+      // optional string description_text = 2;
+      case 2: {
+        if (tag == 18) {
+         parse_description_text:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_description_text()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->description_text().data(), this->description_text().length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "DawnMud.Object.ExtraDescription.description_text"));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:DawnMud.Object.ExtraDescription)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:DawnMud.Object.ExtraDescription)
+  return false;
+#undef DO_
+}
+
+void Object_ExtraDescription::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:DawnMud.Object.ExtraDescription)
+  // repeated string keyword_list = 1;
+  for (int i = 0; i < this->keyword_list_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->keyword_list(i).data(), this->keyword_list(i).length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DawnMud.Object.ExtraDescription.keyword_list");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      1, this->keyword_list(i), output);
+  }
+
+  // optional string description_text = 2;
+  if (this->description_text().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->description_text().data(), this->description_text().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DawnMud.Object.ExtraDescription.description_text");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->description_text(), output);
+  }
+
+  // @@protoc_insertion_point(serialize_end:DawnMud.Object.ExtraDescription)
+}
+
+::google::protobuf::uint8* Object_ExtraDescription::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:DawnMud.Object.ExtraDescription)
+  // repeated string keyword_list = 1;
+  for (int i = 0; i < this->keyword_list_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->keyword_list(i).data(), this->keyword_list(i).length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DawnMud.Object.ExtraDescription.keyword_list");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(1, this->keyword_list(i), target);
+  }
+
+  // optional string description_text = 2;
+  if (this->description_text().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->description_text().data(), this->description_text().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DawnMud.Object.ExtraDescription.description_text");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        2, this->description_text(), target);
+  }
+
+  // @@protoc_insertion_point(serialize_to_array_end:DawnMud.Object.ExtraDescription)
+  return target;
+}
+
+int Object_ExtraDescription::ByteSize() const {
+// @@protoc_insertion_point(message_byte_size_start:DawnMud.Object.ExtraDescription)
+  int total_size = 0;
+
+  // optional string description_text = 2;
+  if (this->description_text().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->description_text());
+  }
+
+  // repeated string keyword_list = 1;
+  total_size += 1 * this->keyword_list_size();
+  for (int i = 0; i < this->keyword_list_size(); i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->keyword_list(i));
+  }
+
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void Object_ExtraDescription::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:DawnMud.Object.ExtraDescription)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) {
+    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  }
+  const Object_ExtraDescription* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const Object_ExtraDescription>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:DawnMud.Object.ExtraDescription)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:DawnMud.Object.ExtraDescription)
+    MergeFrom(*source);
+  }
+}
+
+void Object_ExtraDescription::MergeFrom(const Object_ExtraDescription& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:DawnMud.Object.ExtraDescription)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) {
+    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  }
+  keyword_list_.MergeFrom(from.keyword_list_);
+  if (from.description_text().size() > 0) {
+
+    description_text_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.description_text_);
+  }
+}
+
+void Object_ExtraDescription::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:DawnMud.Object.ExtraDescription)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void Object_ExtraDescription::CopyFrom(const Object_ExtraDescription& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:DawnMud.Object.ExtraDescription)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool Object_ExtraDescription::IsInitialized() const {
+
+  return true;
+}
+
+void Object_ExtraDescription::Swap(Object_ExtraDescription* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Object_ExtraDescription::InternalSwap(Object_ExtraDescription* other) {
+  keyword_list_.UnsafeArenaSwap(&other->keyword_list_);
+  description_text_.Swap(&other->description_text_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata Object_ExtraDescription::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Object_ExtraDescription_descriptor_;
+  metadata.reflection = Object_ExtraDescription_reflection_;
+  return metadata;
+}
+
+
+// -------------------------------------------------------------------
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int Object_ObjectAffect::kTargetFieldNumber;
+const int Object_ObjectAffect::kAffectFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+Object_ObjectAffect::Object_ObjectAffect()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:DawnMud.Object.ObjectAffect)
+}
+
+void Object_ObjectAffect::InitAsDefaultInstance() {
+  _is_default_instance_ = true;
+}
+
+Object_ObjectAffect::Object_ObjectAffect(const Object_ObjectAffect& from)
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:DawnMud.Object.ObjectAffect)
+}
+
+void Object_ObjectAffect::SharedCtor() {
+    _is_default_instance_ = false;
+  _cached_size_ = 0;
+  target_ = 0;
+  affect_ = 0;
+}
+
+Object_ObjectAffect::~Object_ObjectAffect() {
+  // @@protoc_insertion_point(destructor:DawnMud.Object.ObjectAffect)
+  SharedDtor();
+}
+
+void Object_ObjectAffect::SharedDtor() {
+  if (this != default_instance_) {
+  }
+}
+
+void Object_ObjectAffect::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* Object_ObjectAffect::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return Object_ObjectAffect_descriptor_;
+}
+
+const Object_ObjectAffect& Object_ObjectAffect::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_dawnmud_2eproto();
+  return *default_instance_;
+}
+
+Object_ObjectAffect* Object_ObjectAffect::default_instance_ = NULL;
+
+Object_ObjectAffect* Object_ObjectAffect::New(::google::protobuf::Arena* arena) const {
+  Object_ObjectAffect* n = new Object_ObjectAffect;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void Object_ObjectAffect::Clear() {
+// @@protoc_insertion_point(message_clear_start:DawnMud.Object.ObjectAffect)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(Object_ObjectAffect, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<Object_ObjectAffect*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&first, 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(target_, affect_);
+
+#undef ZR_HELPER_
+#undef ZR_
+
+}
+
+bool Object_ObjectAffect::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:DawnMud.Object.ObjectAffect)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional .DawnMud.Object.AffectTarget target = 1;
+      case 1: {
+        if (tag == 8) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_target(static_cast< ::DawnMud::Object_AffectTarget >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(16)) goto parse_affect;
+        break;
+      }
+
+      // optional sint32 affect = 2;
+      case 2: {
+        if (tag == 16) {
+         parse_affect:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_SINT32>(
+                 input, &affect_)));
+
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:DawnMud.Object.ObjectAffect)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:DawnMud.Object.ObjectAffect)
+  return false;
+#undef DO_
+}
+
+void Object_ObjectAffect::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:DawnMud.Object.ObjectAffect)
+  // optional .DawnMud.Object.AffectTarget target = 1;
+  if (this->target() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      1, this->target(), output);
+  }
+
+  // optional sint32 affect = 2;
+  if (this->affect() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteSInt32(2, this->affect(), output);
+  }
+
+  // @@protoc_insertion_point(serialize_end:DawnMud.Object.ObjectAffect)
+}
+
+::google::protobuf::uint8* Object_ObjectAffect::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:DawnMud.Object.ObjectAffect)
+  // optional .DawnMud.Object.AffectTarget target = 1;
+  if (this->target() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      1, this->target(), target);
+  }
+
+  // optional sint32 affect = 2;
+  if (this->affect() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteSInt32ToArray(2, this->affect(), target);
+  }
+
+  // @@protoc_insertion_point(serialize_to_array_end:DawnMud.Object.ObjectAffect)
+  return target;
+}
+
+int Object_ObjectAffect::ByteSize() const {
+// @@protoc_insertion_point(message_byte_size_start:DawnMud.Object.ObjectAffect)
+  int total_size = 0;
+
+  // optional .DawnMud.Object.AffectTarget target = 1;
+  if (this->target() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->target());
+  }
+
+  // optional sint32 affect = 2;
+  if (this->affect() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::SInt32Size(
+        this->affect());
+  }
+
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void Object_ObjectAffect::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:DawnMud.Object.ObjectAffect)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) {
+    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  }
+  const Object_ObjectAffect* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const Object_ObjectAffect>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:DawnMud.Object.ObjectAffect)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:DawnMud.Object.ObjectAffect)
+    MergeFrom(*source);
+  }
+}
+
+void Object_ObjectAffect::MergeFrom(const Object_ObjectAffect& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:DawnMud.Object.ObjectAffect)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) {
+    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  }
+  if (from.target() != 0) {
+    set_target(from.target());
+  }
+  if (from.affect() != 0) {
+    set_affect(from.affect());
+  }
+}
+
+void Object_ObjectAffect::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:DawnMud.Object.ObjectAffect)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void Object_ObjectAffect::CopyFrom(const Object_ObjectAffect& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:DawnMud.Object.ObjectAffect)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool Object_ObjectAffect::IsInitialized() const {
+
+  return true;
+}
+
+void Object_ObjectAffect::Swap(Object_ObjectAffect* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Object_ObjectAffect::InternalSwap(Object_ObjectAffect* other) {
+  std::swap(target_, other->target_);
+  std::swap(affect_, other->affect_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata Object_ObjectAffect::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Object_ObjectAffect_descriptor_;
+  metadata.reflection = Object_ObjectAffect_reflection_;
+  return metadata;
+}
+
+
+// -------------------------------------------------------------------
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int Object::kNumberFieldNumber;
+const int Object::kAliasListFieldNumber;
+const int Object::kShortDescriptionFieldNumber;
+const int Object::kLongDescriptionFieldNumber;
+const int Object::kActionDescriptionToRoomFieldNumber;
+const int Object::kActionDescriptionToVictFieldNumber;
+const int Object::kActionDescriptionToCharFieldNumber;
+const int Object::kActionDescriptionToSleepFieldNumber;
+const int Object::kTypeFlagsFieldNumber;
+const int Object::kEffectsFieldNumber;
+const int Object::kWearFieldNumber;
+const int Object::kValueFieldNumber;
+const int Object::kWeightFieldNumber;
+const int Object::kCostFieldNumber;
+const int Object::kRentPerDayFieldNumber;
+const int Object::kExtraDescriptionsFieldNumber;
+const int Object::kObjectAffectsFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+Object::Object()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:DawnMud.Object)
+}
+
+void Object::InitAsDefaultInstance() {
+  _is_default_instance_ = true;
+}
+
+Object::Object(const Object& from)
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:DawnMud.Object)
+}
+
+void Object::SharedCtor() {
+    _is_default_instance_ = false;
+  ::google::protobuf::internal::GetEmptyString();
+  _cached_size_ = 0;
+  number_ = 0;
+  short_description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  long_description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  action_description_to_room_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  action_description_to_vict_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  action_description_to_char_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  action_description_to_sleep_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  weight_ = 0;
+  cost_ = 0;
+  rent_per_day_ = 0;
+}
+
+Object::~Object() {
+  // @@protoc_insertion_point(destructor:DawnMud.Object)
+  SharedDtor();
+}
+
+void Object::SharedDtor() {
+  short_description_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  long_description_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  action_description_to_room_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  action_description_to_vict_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  action_description_to_char_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  action_description_to_sleep_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (this != default_instance_) {
+  }
+}
+
+void Object::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* Object::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return Object_descriptor_;
+}
+
+const Object& Object::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_dawnmud_2eproto();
+  return *default_instance_;
+}
+
+Object* Object::default_instance_ = NULL;
+
+Object* Object::New(::google::protobuf::Arena* arena) const {
+  Object* n = new Object;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void Object::Clear() {
+// @@protoc_insertion_point(message_clear_start:DawnMud.Object)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(Object, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<Object*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&first, 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  number_ = 0;
+  short_description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  long_description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  action_description_to_room_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  action_description_to_vict_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  action_description_to_char_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  action_description_to_sleep_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ZR_(weight_, rent_per_day_);
+
+#undef ZR_HELPER_
+#undef ZR_
+
+  alias_list_.Clear();
+  type_flags_.Clear();
+  effects_.Clear();
+  wear_.Clear();
+  value_.Clear();
+  extra_descriptions_.Clear();
+  object_affects_.Clear();
+}
+
+bool Object::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:DawnMud.Object)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(16383);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional sint32 number = 1;
+      case 1: {
+        if (tag == 8) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_SINT32>(
+                 input, &number_)));
+
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(18)) goto parse_alias_list;
+        break;
+      }
+
+      // repeated string alias_list = 2;
+      case 2: {
+        if (tag == 18) {
+         parse_alias_list:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_alias_list()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->alias_list(this->alias_list_size() - 1).data(),
+            this->alias_list(this->alias_list_size() - 1).length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "DawnMud.Object.alias_list"));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(18)) goto parse_alias_list;
+        if (input->ExpectTag(26)) goto parse_short_description;
+        break;
+      }
+
+      // optional string short_description = 3;
+      case 3: {
+        if (tag == 26) {
+         parse_short_description:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_short_description()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->short_description().data(), this->short_description().length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "DawnMud.Object.short_description"));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(34)) goto parse_long_description;
+        break;
+      }
+
+      // optional string long_description = 4;
+      case 4: {
+        if (tag == 34) {
+         parse_long_description:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_long_description()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->long_description().data(), this->long_description().length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "DawnMud.Object.long_description"));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(42)) goto parse_action_description_to_room;
+        break;
+      }
+
+      // optional string action_description_to_room = 5;
+      case 5: {
+        if (tag == 42) {
+         parse_action_description_to_room:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_action_description_to_room()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->action_description_to_room().data(), this->action_description_to_room().length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "DawnMud.Object.action_description_to_room"));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(50)) goto parse_action_description_to_vict;
+        break;
+      }
+
+      // optional string action_description_to_vict = 6;
+      case 6: {
+        if (tag == 50) {
+         parse_action_description_to_vict:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_action_description_to_vict()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->action_description_to_vict().data(), this->action_description_to_vict().length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "DawnMud.Object.action_description_to_vict"));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(58)) goto parse_action_description_to_char;
+        break;
+      }
+
+      // optional string action_description_to_char = 7;
+      case 7: {
+        if (tag == 58) {
+         parse_action_description_to_char:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_action_description_to_char()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->action_description_to_char().data(), this->action_description_to_char().length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "DawnMud.Object.action_description_to_char"));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(66)) goto parse_action_description_to_sleep;
+        break;
+      }
+
+      // optional string action_description_to_sleep = 8;
+      case 8: {
+        if (tag == 66) {
+         parse_action_description_to_sleep:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_action_description_to_sleep()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->action_description_to_sleep().data(), this->action_description_to_sleep().length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "DawnMud.Object.action_description_to_sleep"));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(74)) goto parse_type_flags;
+        break;
+      }
+
+      // repeated .DawnMud.Object.TypeFlag type_flags = 9;
+      case 9: {
+        if (tag == 74) {
+         parse_type_flags:
+          ::google::protobuf::uint32 length;
+          DO_(input->ReadVarint32(&length));
+          ::google::protobuf::io::CodedInputStream::Limit limit = input->PushLimit(length);
+          while (input->BytesUntilLimit() > 0) {
+            int value;
+            DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+            add_type_flags(static_cast< ::DawnMud::Object_TypeFlag >(value));
+          }
+          input->PopLimit(limit);
+        } else if (tag == 72) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          add_type_flags(static_cast< ::DawnMud::Object_TypeFlag >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(82)) goto parse_effects;
+        break;
+      }
+
+      // repeated .DawnMud.Object.EffectsBitvector effects = 10;
+      case 10: {
+        if (tag == 82) {
+         parse_effects:
+          ::google::protobuf::uint32 length;
+          DO_(input->ReadVarint32(&length));
+          ::google::protobuf::io::CodedInputStream::Limit limit = input->PushLimit(length);
+          while (input->BytesUntilLimit() > 0) {
+            int value;
+            DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+            add_effects(static_cast< ::DawnMud::Object_EffectsBitvector >(value));
+          }
+          input->PopLimit(limit);
+        } else if (tag == 80) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          add_effects(static_cast< ::DawnMud::Object_EffectsBitvector >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(90)) goto parse_wear;
+        break;
+      }
+
+      // repeated .DawnMud.Object.WearBitvector wear = 11;
+      case 11: {
+        if (tag == 90) {
+         parse_wear:
+          ::google::protobuf::uint32 length;
+          DO_(input->ReadVarint32(&length));
+          ::google::protobuf::io::CodedInputStream::Limit limit = input->PushLimit(length);
+          while (input->BytesUntilLimit() > 0) {
+            int value;
+            DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+            add_wear(static_cast< ::DawnMud::Object_WearBitvector >(value));
+          }
+          input->PopLimit(limit);
+        } else if (tag == 88) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          add_wear(static_cast< ::DawnMud::Object_WearBitvector >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(98)) goto parse_value;
+        break;
+      }
+
+      // repeated sint32 value = 12;
+      case 12: {
+        if (tag == 98) {
+         parse_value:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_SINT32>(
+                 input, this->mutable_value())));
+        } else if (tag == 96) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_SINT32>(
+                 1, 98, input, this->mutable_value())));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(105)) goto parse_weight;
+        break;
+      }
+
+      // optional double weight = 13;
+      case 13: {
+        if (tag == 105) {
+         parse_weight:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &weight_)));
+
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(113)) goto parse_cost;
+        break;
+      }
+
+      // optional double cost = 14;
+      case 14: {
+        if (tag == 113) {
+         parse_cost:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &cost_)));
+
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(121)) goto parse_rent_per_day;
+        break;
+      }
+
+      // optional double rent_per_day = 15;
+      case 15: {
+        if (tag == 121) {
+         parse_rent_per_day:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &rent_per_day_)));
+
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(130)) goto parse_extra_descriptions;
+        break;
+      }
+
+      // repeated .DawnMud.Object.ExtraDescription extra_descriptions = 16;
+      case 16: {
+        if (tag == 130) {
+         parse_extra_descriptions:
+          DO_(input->IncrementRecursionDepth());
+         parse_loop_extra_descriptions:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
+                input, add_extra_descriptions()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(130)) goto parse_loop_extra_descriptions;
+        if (input->ExpectTag(138)) goto parse_loop_object_affects;
+        input->UnsafeDecrementRecursionDepth();
+        break;
+      }
+
+      // repeated .DawnMud.Object.ObjectAffect object_affects = 17;
+      case 17: {
+        if (tag == 138) {
+          DO_(input->IncrementRecursionDepth());
+         parse_loop_object_affects:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
+                input, add_object_affects()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(138)) goto parse_loop_object_affects;
+        input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:DawnMud.Object)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:DawnMud.Object)
+  return false;
+#undef DO_
+}
+
+void Object::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:DawnMud.Object)
+  // optional sint32 number = 1;
+  if (this->number() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteSInt32(1, this->number(), output);
+  }
+
+  // repeated string alias_list = 2;
+  for (int i = 0; i < this->alias_list_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->alias_list(i).data(), this->alias_list(i).length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DawnMud.Object.alias_list");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      2, this->alias_list(i), output);
+  }
+
+  // optional string short_description = 3;
+  if (this->short_description().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->short_description().data(), this->short_description().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DawnMud.Object.short_description");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->short_description(), output);
+  }
+
+  // optional string long_description = 4;
+  if (this->long_description().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->long_description().data(), this->long_description().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DawnMud.Object.long_description");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      4, this->long_description(), output);
+  }
+
+  // optional string action_description_to_room = 5;
+  if (this->action_description_to_room().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->action_description_to_room().data(), this->action_description_to_room().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DawnMud.Object.action_description_to_room");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      5, this->action_description_to_room(), output);
+  }
+
+  // optional string action_description_to_vict = 6;
+  if (this->action_description_to_vict().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->action_description_to_vict().data(), this->action_description_to_vict().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DawnMud.Object.action_description_to_vict");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      6, this->action_description_to_vict(), output);
+  }
+
+  // optional string action_description_to_char = 7;
+  if (this->action_description_to_char().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->action_description_to_char().data(), this->action_description_to_char().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DawnMud.Object.action_description_to_char");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      7, this->action_description_to_char(), output);
+  }
+
+  // optional string action_description_to_sleep = 8;
+  if (this->action_description_to_sleep().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->action_description_to_sleep().data(), this->action_description_to_sleep().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DawnMud.Object.action_description_to_sleep");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      8, this->action_description_to_sleep(), output);
+  }
+
+  // repeated .DawnMud.Object.TypeFlag type_flags = 9;
+  if (this->type_flags_size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteTag(
+      9,
+      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      output);
+    output->WriteVarint32(_type_flags_cached_byte_size_);
+  }
+  for (int i = 0; i < this->type_flags_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnumNoTag(
+      this->type_flags(i), output);
+  }
+
+  // repeated .DawnMud.Object.EffectsBitvector effects = 10;
+  if (this->effects_size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteTag(
+      10,
+      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      output);
+    output->WriteVarint32(_effects_cached_byte_size_);
+  }
+  for (int i = 0; i < this->effects_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnumNoTag(
+      this->effects(i), output);
+  }
+
+  // repeated .DawnMud.Object.WearBitvector wear = 11;
+  if (this->wear_size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteTag(
+      11,
+      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      output);
+    output->WriteVarint32(_wear_cached_byte_size_);
+  }
+  for (int i = 0; i < this->wear_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnumNoTag(
+      this->wear(i), output);
+  }
+
+  // repeated sint32 value = 12;
+  if (this->value_size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteTag(12, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(_value_cached_byte_size_);
+  }
+  for (int i = 0; i < this->value_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteSInt32NoTag(
+      this->value(i), output);
+  }
+
+  // optional double weight = 13;
+  if (this->weight() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteDouble(13, this->weight(), output);
+  }
+
+  // optional double cost = 14;
+  if (this->cost() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteDouble(14, this->cost(), output);
+  }
+
+  // optional double rent_per_day = 15;
+  if (this->rent_per_day() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteDouble(15, this->rent_per_day(), output);
+  }
+
+  // repeated .DawnMud.Object.ExtraDescription extra_descriptions = 16;
+  for (unsigned int i = 0, n = this->extra_descriptions_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      16, this->extra_descriptions(i), output);
+  }
+
+  // repeated .DawnMud.Object.ObjectAffect object_affects = 17;
+  for (unsigned int i = 0, n = this->object_affects_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      17, this->object_affects(i), output);
+  }
+
+  // @@protoc_insertion_point(serialize_end:DawnMud.Object)
+}
+
+::google::protobuf::uint8* Object::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:DawnMud.Object)
+  // optional sint32 number = 1;
+  if (this->number() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteSInt32ToArray(1, this->number(), target);
+  }
+
+  // repeated string alias_list = 2;
+  for (int i = 0; i < this->alias_list_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->alias_list(i).data(), this->alias_list(i).length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DawnMud.Object.alias_list");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(2, this->alias_list(i), target);
+  }
+
+  // optional string short_description = 3;
+  if (this->short_description().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->short_description().data(), this->short_description().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DawnMud.Object.short_description");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        3, this->short_description(), target);
+  }
+
+  // optional string long_description = 4;
+  if (this->long_description().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->long_description().data(), this->long_description().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DawnMud.Object.long_description");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        4, this->long_description(), target);
+  }
+
+  // optional string action_description_to_room = 5;
+  if (this->action_description_to_room().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->action_description_to_room().data(), this->action_description_to_room().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DawnMud.Object.action_description_to_room");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        5, this->action_description_to_room(), target);
+  }
+
+  // optional string action_description_to_vict = 6;
+  if (this->action_description_to_vict().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->action_description_to_vict().data(), this->action_description_to_vict().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DawnMud.Object.action_description_to_vict");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        6, this->action_description_to_vict(), target);
+  }
+
+  // optional string action_description_to_char = 7;
+  if (this->action_description_to_char().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->action_description_to_char().data(), this->action_description_to_char().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DawnMud.Object.action_description_to_char");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        7, this->action_description_to_char(), target);
+  }
+
+  // optional string action_description_to_sleep = 8;
+  if (this->action_description_to_sleep().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->action_description_to_sleep().data(), this->action_description_to_sleep().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "DawnMud.Object.action_description_to_sleep");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        8, this->action_description_to_sleep(), target);
+  }
+
+  // repeated .DawnMud.Object.TypeFlag type_flags = 9;
+  if (this->type_flags_size() > 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
+      9,
+      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(    _type_flags_cached_byte_size_, target);
+  }
+  for (int i = 0; i < this->type_flags_size(); i++) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumNoTagToArray(
+      this->type_flags(i), target);
+  }
+
+  // repeated .DawnMud.Object.EffectsBitvector effects = 10;
+  if (this->effects_size() > 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
+      10,
+      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(    _effects_cached_byte_size_, target);
+  }
+  for (int i = 0; i < this->effects_size(); i++) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumNoTagToArray(
+      this->effects(i), target);
+  }
+
+  // repeated .DawnMud.Object.WearBitvector wear = 11;
+  if (this->wear_size() > 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
+      11,
+      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(    _wear_cached_byte_size_, target);
+  }
+  for (int i = 0; i < this->wear_size(); i++) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumNoTagToArray(
+      this->wear(i), target);
+  }
+
+  // repeated sint32 value = 12;
+  if (this->value_size() > 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
+      12,
+      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
+      _value_cached_byte_size_, target);
+  }
+  for (int i = 0; i < this->value_size(); i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteSInt32NoTagToArray(this->value(i), target);
+  }
+
+  // optional double weight = 13;
+  if (this->weight() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(13, this->weight(), target);
+  }
+
+  // optional double cost = 14;
+  if (this->cost() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(14, this->cost(), target);
+  }
+
+  // optional double rent_per_day = 15;
+  if (this->rent_per_day() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(15, this->rent_per_day(), target);
+  }
+
+  // repeated .DawnMud.Object.ExtraDescription extra_descriptions = 16;
+  for (unsigned int i = 0, n = this->extra_descriptions_size(); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageNoVirtualToArray(
+        16, this->extra_descriptions(i), false, target);
+  }
+
+  // repeated .DawnMud.Object.ObjectAffect object_affects = 17;
+  for (unsigned int i = 0, n = this->object_affects_size(); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageNoVirtualToArray(
+        17, this->object_affects(i), false, target);
+  }
+
+  // @@protoc_insertion_point(serialize_to_array_end:DawnMud.Object)
+  return target;
+}
+
+int Object::ByteSize() const {
+// @@protoc_insertion_point(message_byte_size_start:DawnMud.Object)
+  int total_size = 0;
+
+  // optional sint32 number = 1;
+  if (this->number() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::SInt32Size(
+        this->number());
+  }
+
+  // optional string short_description = 3;
+  if (this->short_description().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->short_description());
+  }
+
+  // optional string long_description = 4;
+  if (this->long_description().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->long_description());
+  }
+
+  // optional string action_description_to_room = 5;
+  if (this->action_description_to_room().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->action_description_to_room());
+  }
+
+  // optional string action_description_to_vict = 6;
+  if (this->action_description_to_vict().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->action_description_to_vict());
+  }
+
+  // optional string action_description_to_char = 7;
+  if (this->action_description_to_char().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->action_description_to_char());
+  }
+
+  // optional string action_description_to_sleep = 8;
+  if (this->action_description_to_sleep().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->action_description_to_sleep());
+  }
+
+  // optional double weight = 13;
+  if (this->weight() != 0) {
+    total_size += 1 + 8;
+  }
+
+  // optional double cost = 14;
+  if (this->cost() != 0) {
+    total_size += 1 + 8;
+  }
+
+  // optional double rent_per_day = 15;
+  if (this->rent_per_day() != 0) {
+    total_size += 1 + 8;
+  }
+
+  // repeated string alias_list = 2;
+  total_size += 1 * this->alias_list_size();
+  for (int i = 0; i < this->alias_list_size(); i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->alias_list(i));
+  }
+
+  // repeated .DawnMud.Object.TypeFlag type_flags = 9;
+  {
+    int data_size = 0;
+    for (int i = 0; i < this->type_flags_size(); i++) {
+      data_size += ::google::protobuf::internal::WireFormatLite::EnumSize(
+        this->type_flags(i));
+    }
+    if (data_size > 0) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
+    }
+    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+    _type_flags_cached_byte_size_ = data_size;
+    GOOGLE_SAFE_CONCURRENT_WRITES_END();
+    total_size += data_size;
+  }
+
+  // repeated .DawnMud.Object.EffectsBitvector effects = 10;
+  {
+    int data_size = 0;
+    for (int i = 0; i < this->effects_size(); i++) {
+      data_size += ::google::protobuf::internal::WireFormatLite::EnumSize(
+        this->effects(i));
+    }
+    if (data_size > 0) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
+    }
+    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+    _effects_cached_byte_size_ = data_size;
+    GOOGLE_SAFE_CONCURRENT_WRITES_END();
+    total_size += data_size;
+  }
+
+  // repeated .DawnMud.Object.WearBitvector wear = 11;
+  {
+    int data_size = 0;
+    for (int i = 0; i < this->wear_size(); i++) {
+      data_size += ::google::protobuf::internal::WireFormatLite::EnumSize(
+        this->wear(i));
+    }
+    if (data_size > 0) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
+    }
+    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+    _wear_cached_byte_size_ = data_size;
+    GOOGLE_SAFE_CONCURRENT_WRITES_END();
+    total_size += data_size;
+  }
+
+  // repeated sint32 value = 12;
+  {
+    int data_size = 0;
+    for (int i = 0; i < this->value_size(); i++) {
+      data_size += ::google::protobuf::internal::WireFormatLite::
+        SInt32Size(this->value(i));
+    }
+    if (data_size > 0) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
+    }
+    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+    _value_cached_byte_size_ = data_size;
+    GOOGLE_SAFE_CONCURRENT_WRITES_END();
+    total_size += data_size;
+  }
+
+  // repeated .DawnMud.Object.ExtraDescription extra_descriptions = 16;
+  total_size += 2 * this->extra_descriptions_size();
+  for (int i = 0; i < this->extra_descriptions_size(); i++) {
+    total_size +=
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        this->extra_descriptions(i));
+  }
+
+  // repeated .DawnMud.Object.ObjectAffect object_affects = 17;
+  total_size += 2 * this->object_affects_size();
+  for (int i = 0; i < this->object_affects_size(); i++) {
+    total_size +=
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        this->object_affects(i));
+  }
+
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void Object::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:DawnMud.Object)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) {
+    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  }
+  const Object* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const Object>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:DawnMud.Object)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:DawnMud.Object)
+    MergeFrom(*source);
+  }
+}
+
+void Object::MergeFrom(const Object& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:DawnMud.Object)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) {
+    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  }
+  alias_list_.MergeFrom(from.alias_list_);
+  type_flags_.MergeFrom(from.type_flags_);
+  effects_.MergeFrom(from.effects_);
+  wear_.MergeFrom(from.wear_);
+  value_.MergeFrom(from.value_);
+  extra_descriptions_.MergeFrom(from.extra_descriptions_);
+  object_affects_.MergeFrom(from.object_affects_);
+  if (from.number() != 0) {
+    set_number(from.number());
+  }
+  if (from.short_description().size() > 0) {
+
+    short_description_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.short_description_);
+  }
+  if (from.long_description().size() > 0) {
+
+    long_description_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.long_description_);
+  }
+  if (from.action_description_to_room().size() > 0) {
+
+    action_description_to_room_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.action_description_to_room_);
+  }
+  if (from.action_description_to_vict().size() > 0) {
+
+    action_description_to_vict_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.action_description_to_vict_);
+  }
+  if (from.action_description_to_char().size() > 0) {
+
+    action_description_to_char_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.action_description_to_char_);
+  }
+  if (from.action_description_to_sleep().size() > 0) {
+
+    action_description_to_sleep_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.action_description_to_sleep_);
+  }
+  if (from.weight() != 0) {
+    set_weight(from.weight());
+  }
+  if (from.cost() != 0) {
+    set_cost(from.cost());
+  }
+  if (from.rent_per_day() != 0) {
+    set_rent_per_day(from.rent_per_day());
+  }
+}
+
+void Object::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:DawnMud.Object)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void Object::CopyFrom(const Object& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:DawnMud.Object)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool Object::IsInitialized() const {
+
+  return true;
+}
+
+void Object::Swap(Object* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Object::InternalSwap(Object* other) {
+  std::swap(number_, other->number_);
+  alias_list_.UnsafeArenaSwap(&other->alias_list_);
+  short_description_.Swap(&other->short_description_);
+  long_description_.Swap(&other->long_description_);
+  action_description_to_room_.Swap(&other->action_description_to_room_);
+  action_description_to_vict_.Swap(&other->action_description_to_vict_);
+  action_description_to_char_.Swap(&other->action_description_to_char_);
+  action_description_to_sleep_.Swap(&other->action_description_to_sleep_);
+  type_flags_.UnsafeArenaSwap(&other->type_flags_);
+  effects_.UnsafeArenaSwap(&other->effects_);
+  wear_.UnsafeArenaSwap(&other->wear_);
+  value_.UnsafeArenaSwap(&other->value_);
+  std::swap(weight_, other->weight_);
+  std::swap(cost_, other->cost_);
+  std::swap(rent_per_day_, other->rent_per_day_);
+  extra_descriptions_.UnsafeArenaSwap(&other->extra_descriptions_);
+  object_affects_.UnsafeArenaSwap(&other->object_affects_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata Object::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Object_descriptor_;
+  metadata.reflection = Object_reflection_;
+  return metadata;
+}
+
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Object_ExtraDescription
+
+// repeated string keyword_list = 1;
+int Object_ExtraDescription::keyword_list_size() const {
+  return keyword_list_.size();
+}
+void Object_ExtraDescription::clear_keyword_list() {
+  keyword_list_.Clear();
+}
+ const ::std::string& Object_ExtraDescription::keyword_list(int index) const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.ExtraDescription.keyword_list)
+  return keyword_list_.Get(index);
+}
+ ::std::string* Object_ExtraDescription::mutable_keyword_list(int index) {
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.ExtraDescription.keyword_list)
+  return keyword_list_.Mutable(index);
+}
+ void Object_ExtraDescription::set_keyword_list(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:DawnMud.Object.ExtraDescription.keyword_list)
+  keyword_list_.Mutable(index)->assign(value);
+}
+ void Object_ExtraDescription::set_keyword_list(int index, const char* value) {
+  keyword_list_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:DawnMud.Object.ExtraDescription.keyword_list)
+}
+ void Object_ExtraDescription::set_keyword_list(int index, const char* value, size_t size) {
+  keyword_list_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:DawnMud.Object.ExtraDescription.keyword_list)
+}
+ ::std::string* Object_ExtraDescription::add_keyword_list() {
+  // @@protoc_insertion_point(field_add_mutable:DawnMud.Object.ExtraDescription.keyword_list)
+  return keyword_list_.Add();
+}
+ void Object_ExtraDescription::add_keyword_list(const ::std::string& value) {
+  keyword_list_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:DawnMud.Object.ExtraDescription.keyword_list)
+}
+ void Object_ExtraDescription::add_keyword_list(const char* value) {
+  keyword_list_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:DawnMud.Object.ExtraDescription.keyword_list)
+}
+ void Object_ExtraDescription::add_keyword_list(const char* value, size_t size) {
+  keyword_list_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:DawnMud.Object.ExtraDescription.keyword_list)
+}
+ const ::google::protobuf::RepeatedPtrField< ::std::string>&
+Object_ExtraDescription::keyword_list() const {
+  // @@protoc_insertion_point(field_list:DawnMud.Object.ExtraDescription.keyword_list)
+  return keyword_list_;
+}
+ ::google::protobuf::RepeatedPtrField< ::std::string>*
+Object_ExtraDescription::mutable_keyword_list() {
+  // @@protoc_insertion_point(field_mutable_list:DawnMud.Object.ExtraDescription.keyword_list)
+  return &keyword_list_;
+}
+
+// optional string description_text = 2;
+void Object_ExtraDescription::clear_description_text() {
+  description_text_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ const ::std::string& Object_ExtraDescription::description_text() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.ExtraDescription.description_text)
+  return description_text_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void Object_ExtraDescription::set_description_text(const ::std::string& value) {
+  
+  description_text_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.ExtraDescription.description_text)
+}
+ void Object_ExtraDescription::set_description_text(const char* value) {
+  
+  description_text_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:DawnMud.Object.ExtraDescription.description_text)
+}
+ void Object_ExtraDescription::set_description_text(const char* value, size_t size) {
+  
+  description_text_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:DawnMud.Object.ExtraDescription.description_text)
+}
+ ::std::string* Object_ExtraDescription::mutable_description_text() {
+  
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.ExtraDescription.description_text)
+  return description_text_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ ::std::string* Object_ExtraDescription::release_description_text() {
+  // @@protoc_insertion_point(field_release:DawnMud.Object.ExtraDescription.description_text)
+  
+  return description_text_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void Object_ExtraDescription::set_allocated_description_text(::std::string* description_text) {
+  if (description_text != NULL) {
+    
+  } else {
+    
+  }
+  description_text_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), description_text);
+  // @@protoc_insertion_point(field_set_allocated:DawnMud.Object.ExtraDescription.description_text)
+}
+
+// -------------------------------------------------------------------
+
+// Object_ObjectAffect
+
+// optional .DawnMud.Object.AffectTarget target = 1;
+void Object_ObjectAffect::clear_target() {
+  target_ = 0;
+}
+ ::DawnMud::Object_AffectTarget Object_ObjectAffect::target() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.ObjectAffect.target)
+  return static_cast< ::DawnMud::Object_AffectTarget >(target_);
+}
+ void Object_ObjectAffect::set_target(::DawnMud::Object_AffectTarget value) {
+  
+  target_ = value;
+  // @@protoc_insertion_point(field_set:DawnMud.Object.ObjectAffect.target)
+}
+
+// optional sint32 affect = 2;
+void Object_ObjectAffect::clear_affect() {
+  affect_ = 0;
+}
+ ::google::protobuf::int32 Object_ObjectAffect::affect() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.ObjectAffect.affect)
+  return affect_;
+}
+ void Object_ObjectAffect::set_affect(::google::protobuf::int32 value) {
+  
+  affect_ = value;
+  // @@protoc_insertion_point(field_set:DawnMud.Object.ObjectAffect.affect)
+}
+
+// -------------------------------------------------------------------
+
+// Object
+
+// optional sint32 number = 1;
+void Object::clear_number() {
+  number_ = 0;
+}
+ ::google::protobuf::int32 Object::number() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.number)
+  return number_;
+}
+ void Object::set_number(::google::protobuf::int32 value) {
+  
+  number_ = value;
+  // @@protoc_insertion_point(field_set:DawnMud.Object.number)
+}
+
+// repeated string alias_list = 2;
+int Object::alias_list_size() const {
+  return alias_list_.size();
+}
+void Object::clear_alias_list() {
+  alias_list_.Clear();
+}
+ const ::std::string& Object::alias_list(int index) const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.alias_list)
+  return alias_list_.Get(index);
+}
+ ::std::string* Object::mutable_alias_list(int index) {
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.alias_list)
+  return alias_list_.Mutable(index);
+}
+ void Object::set_alias_list(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:DawnMud.Object.alias_list)
+  alias_list_.Mutable(index)->assign(value);
+}
+ void Object::set_alias_list(int index, const char* value) {
+  alias_list_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:DawnMud.Object.alias_list)
+}
+ void Object::set_alias_list(int index, const char* value, size_t size) {
+  alias_list_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:DawnMud.Object.alias_list)
+}
+ ::std::string* Object::add_alias_list() {
+  // @@protoc_insertion_point(field_add_mutable:DawnMud.Object.alias_list)
+  return alias_list_.Add();
+}
+ void Object::add_alias_list(const ::std::string& value) {
+  alias_list_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:DawnMud.Object.alias_list)
+}
+ void Object::add_alias_list(const char* value) {
+  alias_list_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:DawnMud.Object.alias_list)
+}
+ void Object::add_alias_list(const char* value, size_t size) {
+  alias_list_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:DawnMud.Object.alias_list)
+}
+ const ::google::protobuf::RepeatedPtrField< ::std::string>&
+Object::alias_list() const {
+  // @@protoc_insertion_point(field_list:DawnMud.Object.alias_list)
+  return alias_list_;
+}
+ ::google::protobuf::RepeatedPtrField< ::std::string>*
+Object::mutable_alias_list() {
+  // @@protoc_insertion_point(field_mutable_list:DawnMud.Object.alias_list)
+  return &alias_list_;
+}
+
+// optional string short_description = 3;
+void Object::clear_short_description() {
+  short_description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ const ::std::string& Object::short_description() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.short_description)
+  return short_description_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void Object::set_short_description(const ::std::string& value) {
+  
+  short_description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.short_description)
+}
+ void Object::set_short_description(const char* value) {
+  
+  short_description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:DawnMud.Object.short_description)
+}
+ void Object::set_short_description(const char* value, size_t size) {
+  
+  short_description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:DawnMud.Object.short_description)
+}
+ ::std::string* Object::mutable_short_description() {
+  
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.short_description)
+  return short_description_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ ::std::string* Object::release_short_description() {
+  // @@protoc_insertion_point(field_release:DawnMud.Object.short_description)
+  
+  return short_description_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void Object::set_allocated_short_description(::std::string* short_description) {
+  if (short_description != NULL) {
+    
+  } else {
+    
+  }
+  short_description_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), short_description);
+  // @@protoc_insertion_point(field_set_allocated:DawnMud.Object.short_description)
+}
+
+// optional string long_description = 4;
+void Object::clear_long_description() {
+  long_description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ const ::std::string& Object::long_description() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.long_description)
+  return long_description_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void Object::set_long_description(const ::std::string& value) {
+  
+  long_description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.long_description)
+}
+ void Object::set_long_description(const char* value) {
+  
+  long_description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:DawnMud.Object.long_description)
+}
+ void Object::set_long_description(const char* value, size_t size) {
+  
+  long_description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:DawnMud.Object.long_description)
+}
+ ::std::string* Object::mutable_long_description() {
+  
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.long_description)
+  return long_description_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ ::std::string* Object::release_long_description() {
+  // @@protoc_insertion_point(field_release:DawnMud.Object.long_description)
+  
+  return long_description_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void Object::set_allocated_long_description(::std::string* long_description) {
+  if (long_description != NULL) {
+    
+  } else {
+    
+  }
+  long_description_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), long_description);
+  // @@protoc_insertion_point(field_set_allocated:DawnMud.Object.long_description)
+}
+
+// optional string action_description_to_room = 5;
+void Object::clear_action_description_to_room() {
+  action_description_to_room_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ const ::std::string& Object::action_description_to_room() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.action_description_to_room)
+  return action_description_to_room_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void Object::set_action_description_to_room(const ::std::string& value) {
+  
+  action_description_to_room_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.action_description_to_room)
+}
+ void Object::set_action_description_to_room(const char* value) {
+  
+  action_description_to_room_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:DawnMud.Object.action_description_to_room)
+}
+ void Object::set_action_description_to_room(const char* value, size_t size) {
+  
+  action_description_to_room_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:DawnMud.Object.action_description_to_room)
+}
+ ::std::string* Object::mutable_action_description_to_room() {
+  
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.action_description_to_room)
+  return action_description_to_room_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ ::std::string* Object::release_action_description_to_room() {
+  // @@protoc_insertion_point(field_release:DawnMud.Object.action_description_to_room)
+  
+  return action_description_to_room_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void Object::set_allocated_action_description_to_room(::std::string* action_description_to_room) {
+  if (action_description_to_room != NULL) {
+    
+  } else {
+    
+  }
+  action_description_to_room_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), action_description_to_room);
+  // @@protoc_insertion_point(field_set_allocated:DawnMud.Object.action_description_to_room)
+}
+
+// optional string action_description_to_vict = 6;
+void Object::clear_action_description_to_vict() {
+  action_description_to_vict_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ const ::std::string& Object::action_description_to_vict() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.action_description_to_vict)
+  return action_description_to_vict_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void Object::set_action_description_to_vict(const ::std::string& value) {
+  
+  action_description_to_vict_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.action_description_to_vict)
+}
+ void Object::set_action_description_to_vict(const char* value) {
+  
+  action_description_to_vict_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:DawnMud.Object.action_description_to_vict)
+}
+ void Object::set_action_description_to_vict(const char* value, size_t size) {
+  
+  action_description_to_vict_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:DawnMud.Object.action_description_to_vict)
+}
+ ::std::string* Object::mutable_action_description_to_vict() {
+  
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.action_description_to_vict)
+  return action_description_to_vict_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ ::std::string* Object::release_action_description_to_vict() {
+  // @@protoc_insertion_point(field_release:DawnMud.Object.action_description_to_vict)
+  
+  return action_description_to_vict_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void Object::set_allocated_action_description_to_vict(::std::string* action_description_to_vict) {
+  if (action_description_to_vict != NULL) {
+    
+  } else {
+    
+  }
+  action_description_to_vict_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), action_description_to_vict);
+  // @@protoc_insertion_point(field_set_allocated:DawnMud.Object.action_description_to_vict)
+}
+
+// optional string action_description_to_char = 7;
+void Object::clear_action_description_to_char() {
+  action_description_to_char_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ const ::std::string& Object::action_description_to_char() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.action_description_to_char)
+  return action_description_to_char_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void Object::set_action_description_to_char(const ::std::string& value) {
+  
+  action_description_to_char_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.action_description_to_char)
+}
+ void Object::set_action_description_to_char(const char* value) {
+  
+  action_description_to_char_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:DawnMud.Object.action_description_to_char)
+}
+ void Object::set_action_description_to_char(const char* value, size_t size) {
+  
+  action_description_to_char_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:DawnMud.Object.action_description_to_char)
+}
+ ::std::string* Object::mutable_action_description_to_char() {
+  
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.action_description_to_char)
+  return action_description_to_char_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ ::std::string* Object::release_action_description_to_char() {
+  // @@protoc_insertion_point(field_release:DawnMud.Object.action_description_to_char)
+  
+  return action_description_to_char_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void Object::set_allocated_action_description_to_char(::std::string* action_description_to_char) {
+  if (action_description_to_char != NULL) {
+    
+  } else {
+    
+  }
+  action_description_to_char_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), action_description_to_char);
+  // @@protoc_insertion_point(field_set_allocated:DawnMud.Object.action_description_to_char)
+}
+
+// optional string action_description_to_sleep = 8;
+void Object::clear_action_description_to_sleep() {
+  action_description_to_sleep_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ const ::std::string& Object::action_description_to_sleep() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.action_description_to_sleep)
+  return action_description_to_sleep_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void Object::set_action_description_to_sleep(const ::std::string& value) {
+  
+  action_description_to_sleep_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.action_description_to_sleep)
+}
+ void Object::set_action_description_to_sleep(const char* value) {
+  
+  action_description_to_sleep_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:DawnMud.Object.action_description_to_sleep)
+}
+ void Object::set_action_description_to_sleep(const char* value, size_t size) {
+  
+  action_description_to_sleep_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:DawnMud.Object.action_description_to_sleep)
+}
+ ::std::string* Object::mutable_action_description_to_sleep() {
+  
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.action_description_to_sleep)
+  return action_description_to_sleep_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ ::std::string* Object::release_action_description_to_sleep() {
+  // @@protoc_insertion_point(field_release:DawnMud.Object.action_description_to_sleep)
+  
+  return action_description_to_sleep_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+ void Object::set_allocated_action_description_to_sleep(::std::string* action_description_to_sleep) {
+  if (action_description_to_sleep != NULL) {
+    
+  } else {
+    
+  }
+  action_description_to_sleep_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), action_description_to_sleep);
+  // @@protoc_insertion_point(field_set_allocated:DawnMud.Object.action_description_to_sleep)
+}
+
+// repeated .DawnMud.Object.TypeFlag type_flags = 9;
+int Object::type_flags_size() const {
+  return type_flags_.size();
+}
+void Object::clear_type_flags() {
+  type_flags_.Clear();
+}
+ ::DawnMud::Object_TypeFlag Object::type_flags(int index) const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.type_flags)
+  return static_cast< ::DawnMud::Object_TypeFlag >(type_flags_.Get(index));
+}
+ void Object::set_type_flags(int index, ::DawnMud::Object_TypeFlag value) {
+  type_flags_.Set(index, value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.type_flags)
+}
+ void Object::add_type_flags(::DawnMud::Object_TypeFlag value) {
+  type_flags_.Add(value);
+  // @@protoc_insertion_point(field_add:DawnMud.Object.type_flags)
+}
+ const ::google::protobuf::RepeatedField<int>&
+Object::type_flags() const {
+  // @@protoc_insertion_point(field_list:DawnMud.Object.type_flags)
+  return type_flags_;
+}
+ ::google::protobuf::RepeatedField<int>*
+Object::mutable_type_flags() {
+  // @@protoc_insertion_point(field_mutable_list:DawnMud.Object.type_flags)
+  return &type_flags_;
+}
+
+// repeated .DawnMud.Object.EffectsBitvector effects = 10;
+int Object::effects_size() const {
+  return effects_.size();
+}
+void Object::clear_effects() {
+  effects_.Clear();
+}
+ ::DawnMud::Object_EffectsBitvector Object::effects(int index) const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.effects)
+  return static_cast< ::DawnMud::Object_EffectsBitvector >(effects_.Get(index));
+}
+ void Object::set_effects(int index, ::DawnMud::Object_EffectsBitvector value) {
+  effects_.Set(index, value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.effects)
+}
+ void Object::add_effects(::DawnMud::Object_EffectsBitvector value) {
+  effects_.Add(value);
+  // @@protoc_insertion_point(field_add:DawnMud.Object.effects)
+}
+ const ::google::protobuf::RepeatedField<int>&
+Object::effects() const {
+  // @@protoc_insertion_point(field_list:DawnMud.Object.effects)
+  return effects_;
+}
+ ::google::protobuf::RepeatedField<int>*
+Object::mutable_effects() {
+  // @@protoc_insertion_point(field_mutable_list:DawnMud.Object.effects)
+  return &effects_;
+}
+
+// repeated .DawnMud.Object.WearBitvector wear = 11;
+int Object::wear_size() const {
+  return wear_.size();
+}
+void Object::clear_wear() {
+  wear_.Clear();
+}
+ ::DawnMud::Object_WearBitvector Object::wear(int index) const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.wear)
+  return static_cast< ::DawnMud::Object_WearBitvector >(wear_.Get(index));
+}
+ void Object::set_wear(int index, ::DawnMud::Object_WearBitvector value) {
+  wear_.Set(index, value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.wear)
+}
+ void Object::add_wear(::DawnMud::Object_WearBitvector value) {
+  wear_.Add(value);
+  // @@protoc_insertion_point(field_add:DawnMud.Object.wear)
+}
+ const ::google::protobuf::RepeatedField<int>&
+Object::wear() const {
+  // @@protoc_insertion_point(field_list:DawnMud.Object.wear)
+  return wear_;
+}
+ ::google::protobuf::RepeatedField<int>*
+Object::mutable_wear() {
+  // @@protoc_insertion_point(field_mutable_list:DawnMud.Object.wear)
+  return &wear_;
+}
+
+// repeated sint32 value = 12;
+int Object::value_size() const {
+  return value_.size();
+}
+void Object::clear_value() {
+  value_.Clear();
+}
+ ::google::protobuf::int32 Object::value(int index) const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.value)
+  return value_.Get(index);
+}
+ void Object::set_value(int index, ::google::protobuf::int32 value) {
+  value_.Set(index, value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.value)
+}
+ void Object::add_value(::google::protobuf::int32 value) {
+  value_.Add(value);
+  // @@protoc_insertion_point(field_add:DawnMud.Object.value)
+}
+ const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+Object::value() const {
+  // @@protoc_insertion_point(field_list:DawnMud.Object.value)
+  return value_;
+}
+ ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+Object::mutable_value() {
+  // @@protoc_insertion_point(field_mutable_list:DawnMud.Object.value)
+  return &value_;
+}
+
+// optional double weight = 13;
+void Object::clear_weight() {
+  weight_ = 0;
+}
+ double Object::weight() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.weight)
+  return weight_;
+}
+ void Object::set_weight(double value) {
+  
+  weight_ = value;
+  // @@protoc_insertion_point(field_set:DawnMud.Object.weight)
+}
+
+// optional double cost = 14;
+void Object::clear_cost() {
+  cost_ = 0;
+}
+ double Object::cost() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.cost)
+  return cost_;
+}
+ void Object::set_cost(double value) {
+  
+  cost_ = value;
+  // @@protoc_insertion_point(field_set:DawnMud.Object.cost)
+}
+
+// optional double rent_per_day = 15;
+void Object::clear_rent_per_day() {
+  rent_per_day_ = 0;
+}
+ double Object::rent_per_day() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.rent_per_day)
+  return rent_per_day_;
+}
+ void Object::set_rent_per_day(double value) {
+  
+  rent_per_day_ = value;
+  // @@protoc_insertion_point(field_set:DawnMud.Object.rent_per_day)
+}
+
+// repeated .DawnMud.Object.ExtraDescription extra_descriptions = 16;
+int Object::extra_descriptions_size() const {
+  return extra_descriptions_.size();
+}
+void Object::clear_extra_descriptions() {
+  extra_descriptions_.Clear();
+}
+const ::DawnMud::Object_ExtraDescription& Object::extra_descriptions(int index) const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.extra_descriptions)
+  return extra_descriptions_.Get(index);
+}
+::DawnMud::Object_ExtraDescription* Object::mutable_extra_descriptions(int index) {
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.extra_descriptions)
+  return extra_descriptions_.Mutable(index);
+}
+::DawnMud::Object_ExtraDescription* Object::add_extra_descriptions() {
+  // @@protoc_insertion_point(field_add:DawnMud.Object.extra_descriptions)
+  return extra_descriptions_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::DawnMud::Object_ExtraDescription >*
+Object::mutable_extra_descriptions() {
+  // @@protoc_insertion_point(field_mutable_list:DawnMud.Object.extra_descriptions)
+  return &extra_descriptions_;
+}
+const ::google::protobuf::RepeatedPtrField< ::DawnMud::Object_ExtraDescription >&
+Object::extra_descriptions() const {
+  // @@protoc_insertion_point(field_list:DawnMud.Object.extra_descriptions)
+  return extra_descriptions_;
+}
+
+// repeated .DawnMud.Object.ObjectAffect object_affects = 17;
+int Object::object_affects_size() const {
+  return object_affects_.size();
+}
+void Object::clear_object_affects() {
+  object_affects_.Clear();
+}
+const ::DawnMud::Object_ObjectAffect& Object::object_affects(int index) const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.object_affects)
+  return object_affects_.Get(index);
+}
+::DawnMud::Object_ObjectAffect* Object::mutable_object_affects(int index) {
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.object_affects)
+  return object_affects_.Mutable(index);
+}
+::DawnMud::Object_ObjectAffect* Object::add_object_affects() {
+  // @@protoc_insertion_point(field_add:DawnMud.Object.object_affects)
+  return object_affects_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::DawnMud::Object_ObjectAffect >*
+Object::mutable_object_affects() {
+  // @@protoc_insertion_point(field_mutable_list:DawnMud.Object.object_affects)
+  return &object_affects_;
+}
+const ::google::protobuf::RepeatedPtrField< ::DawnMud::Object_ObjectAffect >&
+Object::object_affects() const {
+  // @@protoc_insertion_point(field_list:DawnMud.Object.object_affects)
+  return object_affects_;
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+
+// ===================================================================
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int ObjectList::kObjectFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+ObjectList::ObjectList()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:DawnMud.ObjectList)
+}
+
+void ObjectList::InitAsDefaultInstance() {
+  _is_default_instance_ = true;
+}
+
+ObjectList::ObjectList(const ObjectList& from)
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:DawnMud.ObjectList)
+}
+
+void ObjectList::SharedCtor() {
+    _is_default_instance_ = false;
+  _cached_size_ = 0;
+}
+
+ObjectList::~ObjectList() {
+  // @@protoc_insertion_point(destructor:DawnMud.ObjectList)
+  SharedDtor();
+}
+
+void ObjectList::SharedDtor() {
+  if (this != default_instance_) {
+  }
+}
+
+void ObjectList::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* ObjectList::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return ObjectList_descriptor_;
+}
+
+const ObjectList& ObjectList::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_dawnmud_2eproto();
+  return *default_instance_;
+}
+
+ObjectList* ObjectList::default_instance_ = NULL;
+
+ObjectList* ObjectList::New(::google::protobuf::Arena* arena) const {
+  ObjectList* n = new ObjectList;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void ObjectList::Clear() {
+// @@protoc_insertion_point(message_clear_start:DawnMud.ObjectList)
+  object_.Clear();
+}
+
+bool ObjectList::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:DawnMud.ObjectList)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // repeated .DawnMud.Object object = 1;
+      case 1: {
+        if (tag == 10) {
+          DO_(input->IncrementRecursionDepth());
+         parse_loop_object:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
+                input, add_object()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(10)) goto parse_loop_object;
+        input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:DawnMud.ObjectList)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:DawnMud.ObjectList)
+  return false;
+#undef DO_
+}
+
+void ObjectList::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:DawnMud.ObjectList)
+  // repeated .DawnMud.Object object = 1;
+  for (unsigned int i = 0, n = this->object_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->object(i), output);
+  }
+
+  // @@protoc_insertion_point(serialize_end:DawnMud.ObjectList)
+}
+
+::google::protobuf::uint8* ObjectList::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:DawnMud.ObjectList)
+  // repeated .DawnMud.Object object = 1;
+  for (unsigned int i = 0, n = this->object_size(); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageNoVirtualToArray(
+        1, this->object(i), false, target);
+  }
+
+  // @@protoc_insertion_point(serialize_to_array_end:DawnMud.ObjectList)
+  return target;
+}
+
+int ObjectList::ByteSize() const {
+// @@protoc_insertion_point(message_byte_size_start:DawnMud.ObjectList)
+  int total_size = 0;
+
+  // repeated .DawnMud.Object object = 1;
+  total_size += 1 * this->object_size();
+  for (int i = 0; i < this->object_size(); i++) {
+    total_size +=
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        this->object(i));
+  }
+
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void ObjectList::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:DawnMud.ObjectList)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) {
+    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  }
+  const ObjectList* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const ObjectList>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:DawnMud.ObjectList)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:DawnMud.ObjectList)
+    MergeFrom(*source);
+  }
+}
+
+void ObjectList::MergeFrom(const ObjectList& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:DawnMud.ObjectList)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) {
+    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  }
+  object_.MergeFrom(from.object_);
+}
+
+void ObjectList::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:DawnMud.ObjectList)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void ObjectList::CopyFrom(const ObjectList& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:DawnMud.ObjectList)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ObjectList::IsInitialized() const {
+
+  return true;
+}
+
+void ObjectList::Swap(ObjectList* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void ObjectList::InternalSwap(ObjectList* other) {
+  object_.UnsafeArenaSwap(&other->object_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata ObjectList::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ObjectList_descriptor_;
+  metadata.reflection = ObjectList_reflection_;
+  return metadata;
+}
+
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// ObjectList
+
+// repeated .DawnMud.Object object = 1;
+int ObjectList::object_size() const {
+  return object_.size();
+}
+void ObjectList::clear_object() {
+  object_.Clear();
+}
+const ::DawnMud::Object& ObjectList::object(int index) const {
+  // @@protoc_insertion_point(field_get:DawnMud.ObjectList.object)
+  return object_.Get(index);
+}
+::DawnMud::Object* ObjectList::mutable_object(int index) {
+  // @@protoc_insertion_point(field_mutable:DawnMud.ObjectList.object)
+  return object_.Mutable(index);
+}
+::DawnMud::Object* ObjectList::add_object() {
+  // @@protoc_insertion_point(field_add:DawnMud.ObjectList.object)
+  return object_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::DawnMud::Object >*
+ObjectList::mutable_object() {
+  // @@protoc_insertion_point(field_mutable_list:DawnMud.ObjectList.object)
+  return &object_;
+}
+const ::google::protobuf::RepeatedPtrField< ::DawnMud::Object >&
+ObjectList::object() const {
+  // @@protoc_insertion_point(field_list:DawnMud.ObjectList.object)
+  return object_;
 }
 
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS

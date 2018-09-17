@@ -37,6 +37,10 @@ void protobuf_AddDesc_dawnmud_2eproto();
 void protobuf_AssignDesc_dawnmud_2eproto();
 void protobuf_ShutdownFile_dawnmud_2eproto();
 
+class Object;
+class ObjectList;
+class Object_ExtraDescription;
+class Object_ObjectAffect;
 class Zone;
 class ZoneList;
 class Zone_ResetCommands;
@@ -88,6 +92,166 @@ inline bool Zone_ResetMode_Parse(
     const ::std::string& name, Zone_ResetMode* value) {
   return ::google::protobuf::internal::ParseNamedEnum<Zone_ResetMode>(
     Zone_ResetMode_descriptor(), name, value);
+}
+enum Object_TypeFlag {
+  Object_TypeFlag_NOFLAG = 0,
+  Object_TypeFlag_LIGHT = 1,
+  Object_TypeFlag_SCROLL = 2,
+  Object_TypeFlag_WAND = 3,
+  Object_TypeFlag_STAFF = 4,
+  Object_TypeFlag_WEAPON = 5,
+  Object_TypeFlag_FIREWEAPON = 6,
+  Object_TypeFlag_MISSILE = 7,
+  Object_TypeFlag_TREASURE = 8,
+  Object_TypeFlag_ARMOR = 9,
+  Object_TypeFlag_POTION = 10,
+  Object_TypeFlag_WORN = 11,
+  Object_TypeFlag_OTHER = 12,
+  Object_TypeFlag_TRASH = 13,
+  Object_TypeFlag_TRAP = 14,
+  Object_TypeFlag_CONTAINER = 15,
+  Object_TypeFlag_NOTE = 16,
+  Object_TypeFlag_DRINKCON = 17,
+  Object_TypeFlag_KEY = 18,
+  Object_TypeFlag_FOOD = 19,
+  Object_TypeFlag_MONEY = 20,
+  Object_TypeFlag_PEN = 21,
+  Object_TypeFlag_BOAT = 22,
+  Object_TypeFlag_FOUNTAIN = 23,
+  Object_TypeFlag_Object_TypeFlag_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  Object_TypeFlag_Object_TypeFlag_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool Object_TypeFlag_IsValid(int value);
+const Object_TypeFlag Object_TypeFlag_TypeFlag_MIN = Object_TypeFlag_NOFLAG;
+const Object_TypeFlag Object_TypeFlag_TypeFlag_MAX = Object_TypeFlag_FOUNTAIN;
+const int Object_TypeFlag_TypeFlag_ARRAYSIZE = Object_TypeFlag_TypeFlag_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* Object_TypeFlag_descriptor();
+inline const ::std::string& Object_TypeFlag_Name(Object_TypeFlag value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    Object_TypeFlag_descriptor(), value);
+}
+inline bool Object_TypeFlag_Parse(
+    const ::std::string& name, Object_TypeFlag* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<Object_TypeFlag>(
+    Object_TypeFlag_descriptor(), name, value);
+}
+enum Object_EffectsBitvector {
+  Object_EffectsBitvector_NO_EFFECT = 0,
+  Object_EffectsBitvector_GLOW = 1,
+  Object_EffectsBitvector_HUM = 2,
+  Object_EffectsBitvector_NORENT = 3,
+  Object_EffectsBitvector_NODONATE = 4,
+  Object_EffectsBitvector_NOINVIS = 5,
+  Object_EffectsBitvector_INVISIBLE = 6,
+  Object_EffectsBitvector_MAGIC = 7,
+  Object_EffectsBitvector_NODROP = 8,
+  Object_EffectsBitvector_BLESS = 9,
+  Object_EffectsBitvector_ANTI_GOOD = 10,
+  Object_EffectsBitvector_ANTI_EVIL = 11,
+  Object_EffectsBitvector_ANTI_NEUTRAL = 12,
+  Object_EffectsBitvector_ANTI_MAGIC_USER = 13,
+  Object_EffectsBitvector_ANTI_CLERIC = 14,
+  Object_EffectsBitvector_ANTI_THIEF = 15,
+  Object_EffectsBitvector_ANTI_WARRIOR = 16,
+  Object_EffectsBitvector_NOSELL = 17,
+  Object_EffectsBitvector_ANTI_RANGER = 18,
+  Object_EffectsBitvector_Object_EffectsBitvector_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  Object_EffectsBitvector_Object_EffectsBitvector_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool Object_EffectsBitvector_IsValid(int value);
+const Object_EffectsBitvector Object_EffectsBitvector_EffectsBitvector_MIN = Object_EffectsBitvector_NO_EFFECT;
+const Object_EffectsBitvector Object_EffectsBitvector_EffectsBitvector_MAX = Object_EffectsBitvector_ANTI_RANGER;
+const int Object_EffectsBitvector_EffectsBitvector_ARRAYSIZE = Object_EffectsBitvector_EffectsBitvector_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* Object_EffectsBitvector_descriptor();
+inline const ::std::string& Object_EffectsBitvector_Name(Object_EffectsBitvector value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    Object_EffectsBitvector_descriptor(), value);
+}
+inline bool Object_EffectsBitvector_Parse(
+    const ::std::string& name, Object_EffectsBitvector* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<Object_EffectsBitvector>(
+    Object_EffectsBitvector_descriptor(), name, value);
+}
+enum Object_WearBitvector {
+  Object_WearBitvector_NO_WEAR = 0,
+  Object_WearBitvector_WEAR_TAKE = 1,
+  Object_WearBitvector_WEAR_FINGER = 2,
+  Object_WearBitvector_WEAR_NECK = 3,
+  Object_WearBitvector_WEAR_BODY = 4,
+  Object_WearBitvector_WEAR_HEAD = 5,
+  Object_WearBitvector_WEAR_LEGS = 6,
+  Object_WearBitvector_WEAR_FEET = 7,
+  Object_WearBitvector_WEAR_HANDS = 8,
+  Object_WearBitvector_WEAR_ARMS = 9,
+  Object_WearBitvector_WEAR_SHIELD = 10,
+  Object_WearBitvector_WEAR_ABOUT = 11,
+  Object_WearBitvector_WEAR_WAIST = 12,
+  Object_WearBitvector_WEAR_WRIST = 13,
+  Object_WearBitvector_WEAR_WIELD = 14,
+  Object_WearBitvector_WEAR_HOLD = 15,
+  Object_WearBitvector_Object_WearBitvector_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  Object_WearBitvector_Object_WearBitvector_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool Object_WearBitvector_IsValid(int value);
+const Object_WearBitvector Object_WearBitvector_WearBitvector_MIN = Object_WearBitvector_NO_WEAR;
+const Object_WearBitvector Object_WearBitvector_WearBitvector_MAX = Object_WearBitvector_WEAR_HOLD;
+const int Object_WearBitvector_WearBitvector_ARRAYSIZE = Object_WearBitvector_WearBitvector_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* Object_WearBitvector_descriptor();
+inline const ::std::string& Object_WearBitvector_Name(Object_WearBitvector value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    Object_WearBitvector_descriptor(), value);
+}
+inline bool Object_WearBitvector_Parse(
+    const ::std::string& name, Object_WearBitvector* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<Object_WearBitvector>(
+    Object_WearBitvector_descriptor(), name, value);
+}
+enum Object_AffectTarget {
+  Object_AffectTarget_NONE = 0,
+  Object_AffectTarget_STR = 1,
+  Object_AffectTarget_DEX = 2,
+  Object_AffectTarget_INT = 3,
+  Object_AffectTarget_WIS = 4,
+  Object_AffectTarget_CON = 5,
+  Object_AffectTarget_CHA = 6,
+  Object_AffectTarget_CLASS = 7,
+  Object_AffectTarget_LEVEL = 8,
+  Object_AffectTarget_AGE = 9,
+  Object_AffectTarget_CHAR_WEIGHT = 10,
+  Object_AffectTarget_CHAR_HEIGHT = 11,
+  Object_AffectTarget_MANA = 12,
+  Object_AffectTarget_HIT = 13,
+  Object_AffectTarget_MOVE = 14,
+  Object_AffectTarget_GOLD = 15,
+  Object_AffectTarget_EXP = 16,
+  Object_AffectTarget_AC = 17,
+  Object_AffectTarget_HITROLL = 18,
+  Object_AffectTarget_DAMROLL = 19,
+  Object_AffectTarget_SAVING_PARA = 20,
+  Object_AffectTarget_SAVING_ROD = 21,
+  Object_AffectTarget_SAVING_PETRI = 22,
+  Object_AffectTarget_SAVING_BREATH = 23,
+  Object_AffectTarget_SAVING_SPELL = 24,
+  Object_AffectTarget_Object_AffectTarget_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+  Object_AffectTarget_Object_AffectTarget_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+};
+bool Object_AffectTarget_IsValid(int value);
+const Object_AffectTarget Object_AffectTarget_AffectTarget_MIN = Object_AffectTarget_NONE;
+const Object_AffectTarget Object_AffectTarget_AffectTarget_MAX = Object_AffectTarget_SAVING_SPELL;
+const int Object_AffectTarget_AffectTarget_ARRAYSIZE = Object_AffectTarget_AffectTarget_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* Object_AffectTarget_descriptor();
+inline const ::std::string& Object_AffectTarget_Name(Object_AffectTarget value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    Object_AffectTarget_descriptor(), value);
+}
+inline bool Object_AffectTarget_Parse(
+    const ::std::string& name, Object_AffectTarget* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<Object_AffectTarget>(
+    Object_AffectTarget_descriptor(), name, value);
 }
 // ===================================================================
 
@@ -519,6 +683,814 @@ class ZoneList : public ::google::protobuf::Message /* @@protoc_insertion_point(
   void InitAsDefaultInstance();
   static ZoneList* default_instance_;
 };
+// -------------------------------------------------------------------
+
+class Object_ExtraDescription : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:DawnMud.Object.ExtraDescription) */ {
+ public:
+  Object_ExtraDescription();
+  virtual ~Object_ExtraDescription();
+
+  Object_ExtraDescription(const Object_ExtraDescription& from);
+
+  inline Object_ExtraDescription& operator=(const Object_ExtraDescription& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const Object_ExtraDescription& default_instance();
+
+  void Swap(Object_ExtraDescription* other);
+
+  // implements Message ----------------------------------------------
+
+  inline Object_ExtraDescription* New() const { return New(NULL); }
+
+  Object_ExtraDescription* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const Object_ExtraDescription& from);
+  void MergeFrom(const Object_ExtraDescription& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
+    return InternalSerializeWithCachedSizesToArray(false, output);
+  }
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  void InternalSwap(Object_ExtraDescription* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated string keyword_list = 1;
+  int keyword_list_size() const;
+  void clear_keyword_list();
+  static const int kKeywordListFieldNumber = 1;
+  const ::std::string& keyword_list(int index) const;
+  ::std::string* mutable_keyword_list(int index);
+  void set_keyword_list(int index, const ::std::string& value);
+  void set_keyword_list(int index, const char* value);
+  void set_keyword_list(int index, const char* value, size_t size);
+  ::std::string* add_keyword_list();
+  void add_keyword_list(const ::std::string& value);
+  void add_keyword_list(const char* value);
+  void add_keyword_list(const char* value, size_t size);
+  const ::google::protobuf::RepeatedPtrField< ::std::string>& keyword_list() const;
+  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_keyword_list();
+
+  // optional string description_text = 2;
+  void clear_description_text();
+  static const int kDescriptionTextFieldNumber = 2;
+  const ::std::string& description_text() const;
+  void set_description_text(const ::std::string& value);
+  void set_description_text(const char* value);
+  void set_description_text(const char* value, size_t size);
+  ::std::string* mutable_description_text();
+  ::std::string* release_description_text();
+  void set_allocated_description_text(::std::string* description_text);
+
+  // @@protoc_insertion_point(class_scope:DawnMud.Object.ExtraDescription)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  bool _is_default_instance_;
+  ::google::protobuf::RepeatedPtrField< ::std::string> keyword_list_;
+  ::google::protobuf::internal::ArenaStringPtr description_text_;
+  mutable int _cached_size_;
+  friend void  protobuf_AddDesc_dawnmud_2eproto();
+  friend void protobuf_AssignDesc_dawnmud_2eproto();
+  friend void protobuf_ShutdownFile_dawnmud_2eproto();
+
+  void InitAsDefaultInstance();
+  static Object_ExtraDescription* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class Object_ObjectAffect : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:DawnMud.Object.ObjectAffect) */ {
+ public:
+  Object_ObjectAffect();
+  virtual ~Object_ObjectAffect();
+
+  Object_ObjectAffect(const Object_ObjectAffect& from);
+
+  inline Object_ObjectAffect& operator=(const Object_ObjectAffect& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const Object_ObjectAffect& default_instance();
+
+  void Swap(Object_ObjectAffect* other);
+
+  // implements Message ----------------------------------------------
+
+  inline Object_ObjectAffect* New() const { return New(NULL); }
+
+  Object_ObjectAffect* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const Object_ObjectAffect& from);
+  void MergeFrom(const Object_ObjectAffect& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
+    return InternalSerializeWithCachedSizesToArray(false, output);
+  }
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  void InternalSwap(Object_ObjectAffect* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional .DawnMud.Object.AffectTarget target = 1;
+  void clear_target();
+  static const int kTargetFieldNumber = 1;
+  ::DawnMud::Object_AffectTarget target() const;
+  void set_target(::DawnMud::Object_AffectTarget value);
+
+  // optional sint32 affect = 2;
+  void clear_affect();
+  static const int kAffectFieldNumber = 2;
+  ::google::protobuf::int32 affect() const;
+  void set_affect(::google::protobuf::int32 value);
+
+  // @@protoc_insertion_point(class_scope:DawnMud.Object.ObjectAffect)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  bool _is_default_instance_;
+  int target_;
+  ::google::protobuf::int32 affect_;
+  mutable int _cached_size_;
+  friend void  protobuf_AddDesc_dawnmud_2eproto();
+  friend void protobuf_AssignDesc_dawnmud_2eproto();
+  friend void protobuf_ShutdownFile_dawnmud_2eproto();
+
+  void InitAsDefaultInstance();
+  static Object_ObjectAffect* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class Object : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:DawnMud.Object) */ {
+ public:
+  Object();
+  virtual ~Object();
+
+  Object(const Object& from);
+
+  inline Object& operator=(const Object& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const Object& default_instance();
+
+  void Swap(Object* other);
+
+  // implements Message ----------------------------------------------
+
+  inline Object* New() const { return New(NULL); }
+
+  Object* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const Object& from);
+  void MergeFrom(const Object& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
+    return InternalSerializeWithCachedSizesToArray(false, output);
+  }
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  void InternalSwap(Object* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  typedef Object_ExtraDescription ExtraDescription;
+  typedef Object_ObjectAffect ObjectAffect;
+
+  typedef Object_TypeFlag TypeFlag;
+  static const TypeFlag NOFLAG =
+    Object_TypeFlag_NOFLAG;
+  static const TypeFlag LIGHT =
+    Object_TypeFlag_LIGHT;
+  static const TypeFlag SCROLL =
+    Object_TypeFlag_SCROLL;
+  static const TypeFlag WAND =
+    Object_TypeFlag_WAND;
+  static const TypeFlag STAFF =
+    Object_TypeFlag_STAFF;
+  static const TypeFlag WEAPON =
+    Object_TypeFlag_WEAPON;
+  static const TypeFlag FIREWEAPON =
+    Object_TypeFlag_FIREWEAPON;
+  static const TypeFlag MISSILE =
+    Object_TypeFlag_MISSILE;
+  static const TypeFlag TREASURE =
+    Object_TypeFlag_TREASURE;
+  static const TypeFlag ARMOR =
+    Object_TypeFlag_ARMOR;
+  static const TypeFlag POTION =
+    Object_TypeFlag_POTION;
+  static const TypeFlag WORN =
+    Object_TypeFlag_WORN;
+  static const TypeFlag OTHER =
+    Object_TypeFlag_OTHER;
+  static const TypeFlag TRASH =
+    Object_TypeFlag_TRASH;
+  static const TypeFlag TRAP =
+    Object_TypeFlag_TRAP;
+  static const TypeFlag CONTAINER =
+    Object_TypeFlag_CONTAINER;
+  static const TypeFlag NOTE =
+    Object_TypeFlag_NOTE;
+  static const TypeFlag DRINKCON =
+    Object_TypeFlag_DRINKCON;
+  static const TypeFlag KEY =
+    Object_TypeFlag_KEY;
+  static const TypeFlag FOOD =
+    Object_TypeFlag_FOOD;
+  static const TypeFlag MONEY =
+    Object_TypeFlag_MONEY;
+  static const TypeFlag PEN =
+    Object_TypeFlag_PEN;
+  static const TypeFlag BOAT =
+    Object_TypeFlag_BOAT;
+  static const TypeFlag FOUNTAIN =
+    Object_TypeFlag_FOUNTAIN;
+  static inline bool TypeFlag_IsValid(int value) {
+    return Object_TypeFlag_IsValid(value);
+  }
+  static const TypeFlag TypeFlag_MIN =
+    Object_TypeFlag_TypeFlag_MIN;
+  static const TypeFlag TypeFlag_MAX =
+    Object_TypeFlag_TypeFlag_MAX;
+  static const int TypeFlag_ARRAYSIZE =
+    Object_TypeFlag_TypeFlag_ARRAYSIZE;
+  static inline const ::google::protobuf::EnumDescriptor*
+  TypeFlag_descriptor() {
+    return Object_TypeFlag_descriptor();
+  }
+  static inline const ::std::string& TypeFlag_Name(TypeFlag value) {
+    return Object_TypeFlag_Name(value);
+  }
+  static inline bool TypeFlag_Parse(const ::std::string& name,
+      TypeFlag* value) {
+    return Object_TypeFlag_Parse(name, value);
+  }
+
+  typedef Object_EffectsBitvector EffectsBitvector;
+  static const EffectsBitvector NO_EFFECT =
+    Object_EffectsBitvector_NO_EFFECT;
+  static const EffectsBitvector GLOW =
+    Object_EffectsBitvector_GLOW;
+  static const EffectsBitvector HUM =
+    Object_EffectsBitvector_HUM;
+  static const EffectsBitvector NORENT =
+    Object_EffectsBitvector_NORENT;
+  static const EffectsBitvector NODONATE =
+    Object_EffectsBitvector_NODONATE;
+  static const EffectsBitvector NOINVIS =
+    Object_EffectsBitvector_NOINVIS;
+  static const EffectsBitvector INVISIBLE =
+    Object_EffectsBitvector_INVISIBLE;
+  static const EffectsBitvector MAGIC =
+    Object_EffectsBitvector_MAGIC;
+  static const EffectsBitvector NODROP =
+    Object_EffectsBitvector_NODROP;
+  static const EffectsBitvector BLESS =
+    Object_EffectsBitvector_BLESS;
+  static const EffectsBitvector ANTI_GOOD =
+    Object_EffectsBitvector_ANTI_GOOD;
+  static const EffectsBitvector ANTI_EVIL =
+    Object_EffectsBitvector_ANTI_EVIL;
+  static const EffectsBitvector ANTI_NEUTRAL =
+    Object_EffectsBitvector_ANTI_NEUTRAL;
+  static const EffectsBitvector ANTI_MAGIC_USER =
+    Object_EffectsBitvector_ANTI_MAGIC_USER;
+  static const EffectsBitvector ANTI_CLERIC =
+    Object_EffectsBitvector_ANTI_CLERIC;
+  static const EffectsBitvector ANTI_THIEF =
+    Object_EffectsBitvector_ANTI_THIEF;
+  static const EffectsBitvector ANTI_WARRIOR =
+    Object_EffectsBitvector_ANTI_WARRIOR;
+  static const EffectsBitvector NOSELL =
+    Object_EffectsBitvector_NOSELL;
+  static const EffectsBitvector ANTI_RANGER =
+    Object_EffectsBitvector_ANTI_RANGER;
+  static inline bool EffectsBitvector_IsValid(int value) {
+    return Object_EffectsBitvector_IsValid(value);
+  }
+  static const EffectsBitvector EffectsBitvector_MIN =
+    Object_EffectsBitvector_EffectsBitvector_MIN;
+  static const EffectsBitvector EffectsBitvector_MAX =
+    Object_EffectsBitvector_EffectsBitvector_MAX;
+  static const int EffectsBitvector_ARRAYSIZE =
+    Object_EffectsBitvector_EffectsBitvector_ARRAYSIZE;
+  static inline const ::google::protobuf::EnumDescriptor*
+  EffectsBitvector_descriptor() {
+    return Object_EffectsBitvector_descriptor();
+  }
+  static inline const ::std::string& EffectsBitvector_Name(EffectsBitvector value) {
+    return Object_EffectsBitvector_Name(value);
+  }
+  static inline bool EffectsBitvector_Parse(const ::std::string& name,
+      EffectsBitvector* value) {
+    return Object_EffectsBitvector_Parse(name, value);
+  }
+
+  typedef Object_WearBitvector WearBitvector;
+  static const WearBitvector NO_WEAR =
+    Object_WearBitvector_NO_WEAR;
+  static const WearBitvector WEAR_TAKE =
+    Object_WearBitvector_WEAR_TAKE;
+  static const WearBitvector WEAR_FINGER =
+    Object_WearBitvector_WEAR_FINGER;
+  static const WearBitvector WEAR_NECK =
+    Object_WearBitvector_WEAR_NECK;
+  static const WearBitvector WEAR_BODY =
+    Object_WearBitvector_WEAR_BODY;
+  static const WearBitvector WEAR_HEAD =
+    Object_WearBitvector_WEAR_HEAD;
+  static const WearBitvector WEAR_LEGS =
+    Object_WearBitvector_WEAR_LEGS;
+  static const WearBitvector WEAR_FEET =
+    Object_WearBitvector_WEAR_FEET;
+  static const WearBitvector WEAR_HANDS =
+    Object_WearBitvector_WEAR_HANDS;
+  static const WearBitvector WEAR_ARMS =
+    Object_WearBitvector_WEAR_ARMS;
+  static const WearBitvector WEAR_SHIELD =
+    Object_WearBitvector_WEAR_SHIELD;
+  static const WearBitvector WEAR_ABOUT =
+    Object_WearBitvector_WEAR_ABOUT;
+  static const WearBitvector WEAR_WAIST =
+    Object_WearBitvector_WEAR_WAIST;
+  static const WearBitvector WEAR_WRIST =
+    Object_WearBitvector_WEAR_WRIST;
+  static const WearBitvector WEAR_WIELD =
+    Object_WearBitvector_WEAR_WIELD;
+  static const WearBitvector WEAR_HOLD =
+    Object_WearBitvector_WEAR_HOLD;
+  static inline bool WearBitvector_IsValid(int value) {
+    return Object_WearBitvector_IsValid(value);
+  }
+  static const WearBitvector WearBitvector_MIN =
+    Object_WearBitvector_WearBitvector_MIN;
+  static const WearBitvector WearBitvector_MAX =
+    Object_WearBitvector_WearBitvector_MAX;
+  static const int WearBitvector_ARRAYSIZE =
+    Object_WearBitvector_WearBitvector_ARRAYSIZE;
+  static inline const ::google::protobuf::EnumDescriptor*
+  WearBitvector_descriptor() {
+    return Object_WearBitvector_descriptor();
+  }
+  static inline const ::std::string& WearBitvector_Name(WearBitvector value) {
+    return Object_WearBitvector_Name(value);
+  }
+  static inline bool WearBitvector_Parse(const ::std::string& name,
+      WearBitvector* value) {
+    return Object_WearBitvector_Parse(name, value);
+  }
+
+  typedef Object_AffectTarget AffectTarget;
+  static const AffectTarget NONE =
+    Object_AffectTarget_NONE;
+  static const AffectTarget STR =
+    Object_AffectTarget_STR;
+  static const AffectTarget DEX =
+    Object_AffectTarget_DEX;
+  static const AffectTarget INT =
+    Object_AffectTarget_INT;
+  static const AffectTarget WIS =
+    Object_AffectTarget_WIS;
+  static const AffectTarget CON =
+    Object_AffectTarget_CON;
+  static const AffectTarget CHA =
+    Object_AffectTarget_CHA;
+  static const AffectTarget CLASS =
+    Object_AffectTarget_CLASS;
+  static const AffectTarget LEVEL =
+    Object_AffectTarget_LEVEL;
+  static const AffectTarget AGE =
+    Object_AffectTarget_AGE;
+  static const AffectTarget CHAR_WEIGHT =
+    Object_AffectTarget_CHAR_WEIGHT;
+  static const AffectTarget CHAR_HEIGHT =
+    Object_AffectTarget_CHAR_HEIGHT;
+  static const AffectTarget MANA =
+    Object_AffectTarget_MANA;
+  static const AffectTarget HIT =
+    Object_AffectTarget_HIT;
+  static const AffectTarget MOVE =
+    Object_AffectTarget_MOVE;
+  static const AffectTarget GOLD =
+    Object_AffectTarget_GOLD;
+  static const AffectTarget EXP =
+    Object_AffectTarget_EXP;
+  static const AffectTarget AC =
+    Object_AffectTarget_AC;
+  static const AffectTarget HITROLL =
+    Object_AffectTarget_HITROLL;
+  static const AffectTarget DAMROLL =
+    Object_AffectTarget_DAMROLL;
+  static const AffectTarget SAVING_PARA =
+    Object_AffectTarget_SAVING_PARA;
+  static const AffectTarget SAVING_ROD =
+    Object_AffectTarget_SAVING_ROD;
+  static const AffectTarget SAVING_PETRI =
+    Object_AffectTarget_SAVING_PETRI;
+  static const AffectTarget SAVING_BREATH =
+    Object_AffectTarget_SAVING_BREATH;
+  static const AffectTarget SAVING_SPELL =
+    Object_AffectTarget_SAVING_SPELL;
+  static inline bool AffectTarget_IsValid(int value) {
+    return Object_AffectTarget_IsValid(value);
+  }
+  static const AffectTarget AffectTarget_MIN =
+    Object_AffectTarget_AffectTarget_MIN;
+  static const AffectTarget AffectTarget_MAX =
+    Object_AffectTarget_AffectTarget_MAX;
+  static const int AffectTarget_ARRAYSIZE =
+    Object_AffectTarget_AffectTarget_ARRAYSIZE;
+  static inline const ::google::protobuf::EnumDescriptor*
+  AffectTarget_descriptor() {
+    return Object_AffectTarget_descriptor();
+  }
+  static inline const ::std::string& AffectTarget_Name(AffectTarget value) {
+    return Object_AffectTarget_Name(value);
+  }
+  static inline bool AffectTarget_Parse(const ::std::string& name,
+      AffectTarget* value) {
+    return Object_AffectTarget_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  // optional sint32 number = 1;
+  void clear_number();
+  static const int kNumberFieldNumber = 1;
+  ::google::protobuf::int32 number() const;
+  void set_number(::google::protobuf::int32 value);
+
+  // repeated string alias_list = 2;
+  int alias_list_size() const;
+  void clear_alias_list();
+  static const int kAliasListFieldNumber = 2;
+  const ::std::string& alias_list(int index) const;
+  ::std::string* mutable_alias_list(int index);
+  void set_alias_list(int index, const ::std::string& value);
+  void set_alias_list(int index, const char* value);
+  void set_alias_list(int index, const char* value, size_t size);
+  ::std::string* add_alias_list();
+  void add_alias_list(const ::std::string& value);
+  void add_alias_list(const char* value);
+  void add_alias_list(const char* value, size_t size);
+  const ::google::protobuf::RepeatedPtrField< ::std::string>& alias_list() const;
+  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_alias_list();
+
+  // optional string short_description = 3;
+  void clear_short_description();
+  static const int kShortDescriptionFieldNumber = 3;
+  const ::std::string& short_description() const;
+  void set_short_description(const ::std::string& value);
+  void set_short_description(const char* value);
+  void set_short_description(const char* value, size_t size);
+  ::std::string* mutable_short_description();
+  ::std::string* release_short_description();
+  void set_allocated_short_description(::std::string* short_description);
+
+  // optional string long_description = 4;
+  void clear_long_description();
+  static const int kLongDescriptionFieldNumber = 4;
+  const ::std::string& long_description() const;
+  void set_long_description(const ::std::string& value);
+  void set_long_description(const char* value);
+  void set_long_description(const char* value, size_t size);
+  ::std::string* mutable_long_description();
+  ::std::string* release_long_description();
+  void set_allocated_long_description(::std::string* long_description);
+
+  // optional string action_description_to_room = 5;
+  void clear_action_description_to_room();
+  static const int kActionDescriptionToRoomFieldNumber = 5;
+  const ::std::string& action_description_to_room() const;
+  void set_action_description_to_room(const ::std::string& value);
+  void set_action_description_to_room(const char* value);
+  void set_action_description_to_room(const char* value, size_t size);
+  ::std::string* mutable_action_description_to_room();
+  ::std::string* release_action_description_to_room();
+  void set_allocated_action_description_to_room(::std::string* action_description_to_room);
+
+  // optional string action_description_to_vict = 6;
+  void clear_action_description_to_vict();
+  static const int kActionDescriptionToVictFieldNumber = 6;
+  const ::std::string& action_description_to_vict() const;
+  void set_action_description_to_vict(const ::std::string& value);
+  void set_action_description_to_vict(const char* value);
+  void set_action_description_to_vict(const char* value, size_t size);
+  ::std::string* mutable_action_description_to_vict();
+  ::std::string* release_action_description_to_vict();
+  void set_allocated_action_description_to_vict(::std::string* action_description_to_vict);
+
+  // optional string action_description_to_char = 7;
+  void clear_action_description_to_char();
+  static const int kActionDescriptionToCharFieldNumber = 7;
+  const ::std::string& action_description_to_char() const;
+  void set_action_description_to_char(const ::std::string& value);
+  void set_action_description_to_char(const char* value);
+  void set_action_description_to_char(const char* value, size_t size);
+  ::std::string* mutable_action_description_to_char();
+  ::std::string* release_action_description_to_char();
+  void set_allocated_action_description_to_char(::std::string* action_description_to_char);
+
+  // optional string action_description_to_sleep = 8;
+  void clear_action_description_to_sleep();
+  static const int kActionDescriptionToSleepFieldNumber = 8;
+  const ::std::string& action_description_to_sleep() const;
+  void set_action_description_to_sleep(const ::std::string& value);
+  void set_action_description_to_sleep(const char* value);
+  void set_action_description_to_sleep(const char* value, size_t size);
+  ::std::string* mutable_action_description_to_sleep();
+  ::std::string* release_action_description_to_sleep();
+  void set_allocated_action_description_to_sleep(::std::string* action_description_to_sleep);
+
+  // repeated .DawnMud.Object.TypeFlag type_flags = 9;
+  int type_flags_size() const;
+  void clear_type_flags();
+  static const int kTypeFlagsFieldNumber = 9;
+  ::DawnMud::Object_TypeFlag type_flags(int index) const;
+  void set_type_flags(int index, ::DawnMud::Object_TypeFlag value);
+  void add_type_flags(::DawnMud::Object_TypeFlag value);
+  const ::google::protobuf::RepeatedField<int>& type_flags() const;
+  ::google::protobuf::RepeatedField<int>* mutable_type_flags();
+
+  // repeated .DawnMud.Object.EffectsBitvector effects = 10;
+  int effects_size() const;
+  void clear_effects();
+  static const int kEffectsFieldNumber = 10;
+  ::DawnMud::Object_EffectsBitvector effects(int index) const;
+  void set_effects(int index, ::DawnMud::Object_EffectsBitvector value);
+  void add_effects(::DawnMud::Object_EffectsBitvector value);
+  const ::google::protobuf::RepeatedField<int>& effects() const;
+  ::google::protobuf::RepeatedField<int>* mutable_effects();
+
+  // repeated .DawnMud.Object.WearBitvector wear = 11;
+  int wear_size() const;
+  void clear_wear();
+  static const int kWearFieldNumber = 11;
+  ::DawnMud::Object_WearBitvector wear(int index) const;
+  void set_wear(int index, ::DawnMud::Object_WearBitvector value);
+  void add_wear(::DawnMud::Object_WearBitvector value);
+  const ::google::protobuf::RepeatedField<int>& wear() const;
+  ::google::protobuf::RepeatedField<int>* mutable_wear();
+
+  // repeated sint32 value = 12;
+  int value_size() const;
+  void clear_value();
+  static const int kValueFieldNumber = 12;
+  ::google::protobuf::int32 value(int index) const;
+  void set_value(int index, ::google::protobuf::int32 value);
+  void add_value(::google::protobuf::int32 value);
+  const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+      value() const;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+      mutable_value();
+
+  // optional double weight = 13;
+  void clear_weight();
+  static const int kWeightFieldNumber = 13;
+  double weight() const;
+  void set_weight(double value);
+
+  // optional double cost = 14;
+  void clear_cost();
+  static const int kCostFieldNumber = 14;
+  double cost() const;
+  void set_cost(double value);
+
+  // optional double rent_per_day = 15;
+  void clear_rent_per_day();
+  static const int kRentPerDayFieldNumber = 15;
+  double rent_per_day() const;
+  void set_rent_per_day(double value);
+
+  // repeated .DawnMud.Object.ExtraDescription extra_descriptions = 16;
+  int extra_descriptions_size() const;
+  void clear_extra_descriptions();
+  static const int kExtraDescriptionsFieldNumber = 16;
+  const ::DawnMud::Object_ExtraDescription& extra_descriptions(int index) const;
+  ::DawnMud::Object_ExtraDescription* mutable_extra_descriptions(int index);
+  ::DawnMud::Object_ExtraDescription* add_extra_descriptions();
+  ::google::protobuf::RepeatedPtrField< ::DawnMud::Object_ExtraDescription >*
+      mutable_extra_descriptions();
+  const ::google::protobuf::RepeatedPtrField< ::DawnMud::Object_ExtraDescription >&
+      extra_descriptions() const;
+
+  // repeated .DawnMud.Object.ObjectAffect object_affects = 17;
+  int object_affects_size() const;
+  void clear_object_affects();
+  static const int kObjectAffectsFieldNumber = 17;
+  const ::DawnMud::Object_ObjectAffect& object_affects(int index) const;
+  ::DawnMud::Object_ObjectAffect* mutable_object_affects(int index);
+  ::DawnMud::Object_ObjectAffect* add_object_affects();
+  ::google::protobuf::RepeatedPtrField< ::DawnMud::Object_ObjectAffect >*
+      mutable_object_affects();
+  const ::google::protobuf::RepeatedPtrField< ::DawnMud::Object_ObjectAffect >&
+      object_affects() const;
+
+  // @@protoc_insertion_point(class_scope:DawnMud.Object)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  bool _is_default_instance_;
+  ::google::protobuf::RepeatedPtrField< ::std::string> alias_list_;
+  ::google::protobuf::internal::ArenaStringPtr short_description_;
+  ::google::protobuf::internal::ArenaStringPtr long_description_;
+  ::google::protobuf::internal::ArenaStringPtr action_description_to_room_;
+  ::google::protobuf::internal::ArenaStringPtr action_description_to_vict_;
+  ::google::protobuf::internal::ArenaStringPtr action_description_to_char_;
+  ::google::protobuf::internal::ArenaStringPtr action_description_to_sleep_;
+  ::google::protobuf::RepeatedField<int> type_flags_;
+  mutable int _type_flags_cached_byte_size_;
+  ::google::protobuf::RepeatedField<int> effects_;
+  mutable int _effects_cached_byte_size_;
+  ::google::protobuf::RepeatedField<int> wear_;
+  mutable int _wear_cached_byte_size_;
+  ::google::protobuf::RepeatedField< ::google::protobuf::int32 > value_;
+  mutable int _value_cached_byte_size_;
+  double weight_;
+  double cost_;
+  double rent_per_day_;
+  ::google::protobuf::RepeatedPtrField< ::DawnMud::Object_ExtraDescription > extra_descriptions_;
+  ::google::protobuf::RepeatedPtrField< ::DawnMud::Object_ObjectAffect > object_affects_;
+  ::google::protobuf::int32 number_;
+  mutable int _cached_size_;
+  friend void  protobuf_AddDesc_dawnmud_2eproto();
+  friend void protobuf_AssignDesc_dawnmud_2eproto();
+  friend void protobuf_ShutdownFile_dawnmud_2eproto();
+
+  void InitAsDefaultInstance();
+  static Object* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class ObjectList : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:DawnMud.ObjectList) */ {
+ public:
+  ObjectList();
+  virtual ~ObjectList();
+
+  ObjectList(const ObjectList& from);
+
+  inline ObjectList& operator=(const ObjectList& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const ObjectList& default_instance();
+
+  void Swap(ObjectList* other);
+
+  // implements Message ----------------------------------------------
+
+  inline ObjectList* New() const { return New(NULL); }
+
+  ObjectList* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const ObjectList& from);
+  void MergeFrom(const ObjectList& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
+    return InternalSerializeWithCachedSizesToArray(false, output);
+  }
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  void InternalSwap(ObjectList* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // repeated .DawnMud.Object object = 1;
+  int object_size() const;
+  void clear_object();
+  static const int kObjectFieldNumber = 1;
+  const ::DawnMud::Object& object(int index) const;
+  ::DawnMud::Object* mutable_object(int index);
+  ::DawnMud::Object* add_object();
+  ::google::protobuf::RepeatedPtrField< ::DawnMud::Object >*
+      mutable_object();
+  const ::google::protobuf::RepeatedPtrField< ::DawnMud::Object >&
+      object() const;
+
+  // @@protoc_insertion_point(class_scope:DawnMud.ObjectList)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  bool _is_default_instance_;
+  ::google::protobuf::RepeatedPtrField< ::DawnMud::Object > object_;
+  mutable int _cached_size_;
+  friend void  protobuf_AddDesc_dawnmud_2eproto();
+  friend void protobuf_AssignDesc_dawnmud_2eproto();
+  friend void protobuf_ShutdownFile_dawnmud_2eproto();
+
+  void InitAsDefaultInstance();
+  static ObjectList* default_instance_;
+};
 // ===================================================================
 
 
@@ -862,7 +1834,743 @@ ZoneList::zone() const {
   return zone_;
 }
 
+// -------------------------------------------------------------------
+
+// Object_ExtraDescription
+
+// repeated string keyword_list = 1;
+inline int Object_ExtraDescription::keyword_list_size() const {
+  return keyword_list_.size();
+}
+inline void Object_ExtraDescription::clear_keyword_list() {
+  keyword_list_.Clear();
+}
+inline const ::std::string& Object_ExtraDescription::keyword_list(int index) const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.ExtraDescription.keyword_list)
+  return keyword_list_.Get(index);
+}
+inline ::std::string* Object_ExtraDescription::mutable_keyword_list(int index) {
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.ExtraDescription.keyword_list)
+  return keyword_list_.Mutable(index);
+}
+inline void Object_ExtraDescription::set_keyword_list(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:DawnMud.Object.ExtraDescription.keyword_list)
+  keyword_list_.Mutable(index)->assign(value);
+}
+inline void Object_ExtraDescription::set_keyword_list(int index, const char* value) {
+  keyword_list_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:DawnMud.Object.ExtraDescription.keyword_list)
+}
+inline void Object_ExtraDescription::set_keyword_list(int index, const char* value, size_t size) {
+  keyword_list_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:DawnMud.Object.ExtraDescription.keyword_list)
+}
+inline ::std::string* Object_ExtraDescription::add_keyword_list() {
+  // @@protoc_insertion_point(field_add_mutable:DawnMud.Object.ExtraDescription.keyword_list)
+  return keyword_list_.Add();
+}
+inline void Object_ExtraDescription::add_keyword_list(const ::std::string& value) {
+  keyword_list_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:DawnMud.Object.ExtraDescription.keyword_list)
+}
+inline void Object_ExtraDescription::add_keyword_list(const char* value) {
+  keyword_list_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:DawnMud.Object.ExtraDescription.keyword_list)
+}
+inline void Object_ExtraDescription::add_keyword_list(const char* value, size_t size) {
+  keyword_list_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:DawnMud.Object.ExtraDescription.keyword_list)
+}
+inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+Object_ExtraDescription::keyword_list() const {
+  // @@protoc_insertion_point(field_list:DawnMud.Object.ExtraDescription.keyword_list)
+  return keyword_list_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+Object_ExtraDescription::mutable_keyword_list() {
+  // @@protoc_insertion_point(field_mutable_list:DawnMud.Object.ExtraDescription.keyword_list)
+  return &keyword_list_;
+}
+
+// optional string description_text = 2;
+inline void Object_ExtraDescription::clear_description_text() {
+  description_text_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& Object_ExtraDescription::description_text() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.ExtraDescription.description_text)
+  return description_text_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Object_ExtraDescription::set_description_text(const ::std::string& value) {
+  
+  description_text_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.ExtraDescription.description_text)
+}
+inline void Object_ExtraDescription::set_description_text(const char* value) {
+  
+  description_text_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:DawnMud.Object.ExtraDescription.description_text)
+}
+inline void Object_ExtraDescription::set_description_text(const char* value, size_t size) {
+  
+  description_text_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:DawnMud.Object.ExtraDescription.description_text)
+}
+inline ::std::string* Object_ExtraDescription::mutable_description_text() {
+  
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.ExtraDescription.description_text)
+  return description_text_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* Object_ExtraDescription::release_description_text() {
+  // @@protoc_insertion_point(field_release:DawnMud.Object.ExtraDescription.description_text)
+  
+  return description_text_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Object_ExtraDescription::set_allocated_description_text(::std::string* description_text) {
+  if (description_text != NULL) {
+    
+  } else {
+    
+  }
+  description_text_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), description_text);
+  // @@protoc_insertion_point(field_set_allocated:DawnMud.Object.ExtraDescription.description_text)
+}
+
+// -------------------------------------------------------------------
+
+// Object_ObjectAffect
+
+// optional .DawnMud.Object.AffectTarget target = 1;
+inline void Object_ObjectAffect::clear_target() {
+  target_ = 0;
+}
+inline ::DawnMud::Object_AffectTarget Object_ObjectAffect::target() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.ObjectAffect.target)
+  return static_cast< ::DawnMud::Object_AffectTarget >(target_);
+}
+inline void Object_ObjectAffect::set_target(::DawnMud::Object_AffectTarget value) {
+  
+  target_ = value;
+  // @@protoc_insertion_point(field_set:DawnMud.Object.ObjectAffect.target)
+}
+
+// optional sint32 affect = 2;
+inline void Object_ObjectAffect::clear_affect() {
+  affect_ = 0;
+}
+inline ::google::protobuf::int32 Object_ObjectAffect::affect() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.ObjectAffect.affect)
+  return affect_;
+}
+inline void Object_ObjectAffect::set_affect(::google::protobuf::int32 value) {
+  
+  affect_ = value;
+  // @@protoc_insertion_point(field_set:DawnMud.Object.ObjectAffect.affect)
+}
+
+// -------------------------------------------------------------------
+
+// Object
+
+// optional sint32 number = 1;
+inline void Object::clear_number() {
+  number_ = 0;
+}
+inline ::google::protobuf::int32 Object::number() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.number)
+  return number_;
+}
+inline void Object::set_number(::google::protobuf::int32 value) {
+  
+  number_ = value;
+  // @@protoc_insertion_point(field_set:DawnMud.Object.number)
+}
+
+// repeated string alias_list = 2;
+inline int Object::alias_list_size() const {
+  return alias_list_.size();
+}
+inline void Object::clear_alias_list() {
+  alias_list_.Clear();
+}
+inline const ::std::string& Object::alias_list(int index) const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.alias_list)
+  return alias_list_.Get(index);
+}
+inline ::std::string* Object::mutable_alias_list(int index) {
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.alias_list)
+  return alias_list_.Mutable(index);
+}
+inline void Object::set_alias_list(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:DawnMud.Object.alias_list)
+  alias_list_.Mutable(index)->assign(value);
+}
+inline void Object::set_alias_list(int index, const char* value) {
+  alias_list_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:DawnMud.Object.alias_list)
+}
+inline void Object::set_alias_list(int index, const char* value, size_t size) {
+  alias_list_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:DawnMud.Object.alias_list)
+}
+inline ::std::string* Object::add_alias_list() {
+  // @@protoc_insertion_point(field_add_mutable:DawnMud.Object.alias_list)
+  return alias_list_.Add();
+}
+inline void Object::add_alias_list(const ::std::string& value) {
+  alias_list_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:DawnMud.Object.alias_list)
+}
+inline void Object::add_alias_list(const char* value) {
+  alias_list_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:DawnMud.Object.alias_list)
+}
+inline void Object::add_alias_list(const char* value, size_t size) {
+  alias_list_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:DawnMud.Object.alias_list)
+}
+inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+Object::alias_list() const {
+  // @@protoc_insertion_point(field_list:DawnMud.Object.alias_list)
+  return alias_list_;
+}
+inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+Object::mutable_alias_list() {
+  // @@protoc_insertion_point(field_mutable_list:DawnMud.Object.alias_list)
+  return &alias_list_;
+}
+
+// optional string short_description = 3;
+inline void Object::clear_short_description() {
+  short_description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& Object::short_description() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.short_description)
+  return short_description_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Object::set_short_description(const ::std::string& value) {
+  
+  short_description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.short_description)
+}
+inline void Object::set_short_description(const char* value) {
+  
+  short_description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:DawnMud.Object.short_description)
+}
+inline void Object::set_short_description(const char* value, size_t size) {
+  
+  short_description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:DawnMud.Object.short_description)
+}
+inline ::std::string* Object::mutable_short_description() {
+  
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.short_description)
+  return short_description_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* Object::release_short_description() {
+  // @@protoc_insertion_point(field_release:DawnMud.Object.short_description)
+  
+  return short_description_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Object::set_allocated_short_description(::std::string* short_description) {
+  if (short_description != NULL) {
+    
+  } else {
+    
+  }
+  short_description_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), short_description);
+  // @@protoc_insertion_point(field_set_allocated:DawnMud.Object.short_description)
+}
+
+// optional string long_description = 4;
+inline void Object::clear_long_description() {
+  long_description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& Object::long_description() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.long_description)
+  return long_description_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Object::set_long_description(const ::std::string& value) {
+  
+  long_description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.long_description)
+}
+inline void Object::set_long_description(const char* value) {
+  
+  long_description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:DawnMud.Object.long_description)
+}
+inline void Object::set_long_description(const char* value, size_t size) {
+  
+  long_description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:DawnMud.Object.long_description)
+}
+inline ::std::string* Object::mutable_long_description() {
+  
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.long_description)
+  return long_description_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* Object::release_long_description() {
+  // @@protoc_insertion_point(field_release:DawnMud.Object.long_description)
+  
+  return long_description_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Object::set_allocated_long_description(::std::string* long_description) {
+  if (long_description != NULL) {
+    
+  } else {
+    
+  }
+  long_description_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), long_description);
+  // @@protoc_insertion_point(field_set_allocated:DawnMud.Object.long_description)
+}
+
+// optional string action_description_to_room = 5;
+inline void Object::clear_action_description_to_room() {
+  action_description_to_room_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& Object::action_description_to_room() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.action_description_to_room)
+  return action_description_to_room_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Object::set_action_description_to_room(const ::std::string& value) {
+  
+  action_description_to_room_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.action_description_to_room)
+}
+inline void Object::set_action_description_to_room(const char* value) {
+  
+  action_description_to_room_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:DawnMud.Object.action_description_to_room)
+}
+inline void Object::set_action_description_to_room(const char* value, size_t size) {
+  
+  action_description_to_room_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:DawnMud.Object.action_description_to_room)
+}
+inline ::std::string* Object::mutable_action_description_to_room() {
+  
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.action_description_to_room)
+  return action_description_to_room_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* Object::release_action_description_to_room() {
+  // @@protoc_insertion_point(field_release:DawnMud.Object.action_description_to_room)
+  
+  return action_description_to_room_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Object::set_allocated_action_description_to_room(::std::string* action_description_to_room) {
+  if (action_description_to_room != NULL) {
+    
+  } else {
+    
+  }
+  action_description_to_room_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), action_description_to_room);
+  // @@protoc_insertion_point(field_set_allocated:DawnMud.Object.action_description_to_room)
+}
+
+// optional string action_description_to_vict = 6;
+inline void Object::clear_action_description_to_vict() {
+  action_description_to_vict_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& Object::action_description_to_vict() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.action_description_to_vict)
+  return action_description_to_vict_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Object::set_action_description_to_vict(const ::std::string& value) {
+  
+  action_description_to_vict_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.action_description_to_vict)
+}
+inline void Object::set_action_description_to_vict(const char* value) {
+  
+  action_description_to_vict_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:DawnMud.Object.action_description_to_vict)
+}
+inline void Object::set_action_description_to_vict(const char* value, size_t size) {
+  
+  action_description_to_vict_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:DawnMud.Object.action_description_to_vict)
+}
+inline ::std::string* Object::mutable_action_description_to_vict() {
+  
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.action_description_to_vict)
+  return action_description_to_vict_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* Object::release_action_description_to_vict() {
+  // @@protoc_insertion_point(field_release:DawnMud.Object.action_description_to_vict)
+  
+  return action_description_to_vict_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Object::set_allocated_action_description_to_vict(::std::string* action_description_to_vict) {
+  if (action_description_to_vict != NULL) {
+    
+  } else {
+    
+  }
+  action_description_to_vict_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), action_description_to_vict);
+  // @@protoc_insertion_point(field_set_allocated:DawnMud.Object.action_description_to_vict)
+}
+
+// optional string action_description_to_char = 7;
+inline void Object::clear_action_description_to_char() {
+  action_description_to_char_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& Object::action_description_to_char() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.action_description_to_char)
+  return action_description_to_char_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Object::set_action_description_to_char(const ::std::string& value) {
+  
+  action_description_to_char_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.action_description_to_char)
+}
+inline void Object::set_action_description_to_char(const char* value) {
+  
+  action_description_to_char_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:DawnMud.Object.action_description_to_char)
+}
+inline void Object::set_action_description_to_char(const char* value, size_t size) {
+  
+  action_description_to_char_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:DawnMud.Object.action_description_to_char)
+}
+inline ::std::string* Object::mutable_action_description_to_char() {
+  
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.action_description_to_char)
+  return action_description_to_char_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* Object::release_action_description_to_char() {
+  // @@protoc_insertion_point(field_release:DawnMud.Object.action_description_to_char)
+  
+  return action_description_to_char_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Object::set_allocated_action_description_to_char(::std::string* action_description_to_char) {
+  if (action_description_to_char != NULL) {
+    
+  } else {
+    
+  }
+  action_description_to_char_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), action_description_to_char);
+  // @@protoc_insertion_point(field_set_allocated:DawnMud.Object.action_description_to_char)
+}
+
+// optional string action_description_to_sleep = 8;
+inline void Object::clear_action_description_to_sleep() {
+  action_description_to_sleep_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline const ::std::string& Object::action_description_to_sleep() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.action_description_to_sleep)
+  return action_description_to_sleep_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Object::set_action_description_to_sleep(const ::std::string& value) {
+  
+  action_description_to_sleep_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.action_description_to_sleep)
+}
+inline void Object::set_action_description_to_sleep(const char* value) {
+  
+  action_description_to_sleep_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:DawnMud.Object.action_description_to_sleep)
+}
+inline void Object::set_action_description_to_sleep(const char* value, size_t size) {
+  
+  action_description_to_sleep_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:DawnMud.Object.action_description_to_sleep)
+}
+inline ::std::string* Object::mutable_action_description_to_sleep() {
+  
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.action_description_to_sleep)
+  return action_description_to_sleep_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* Object::release_action_description_to_sleep() {
+  // @@protoc_insertion_point(field_release:DawnMud.Object.action_description_to_sleep)
+  
+  return action_description_to_sleep_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void Object::set_allocated_action_description_to_sleep(::std::string* action_description_to_sleep) {
+  if (action_description_to_sleep != NULL) {
+    
+  } else {
+    
+  }
+  action_description_to_sleep_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), action_description_to_sleep);
+  // @@protoc_insertion_point(field_set_allocated:DawnMud.Object.action_description_to_sleep)
+}
+
+// repeated .DawnMud.Object.TypeFlag type_flags = 9;
+inline int Object::type_flags_size() const {
+  return type_flags_.size();
+}
+inline void Object::clear_type_flags() {
+  type_flags_.Clear();
+}
+inline ::DawnMud::Object_TypeFlag Object::type_flags(int index) const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.type_flags)
+  return static_cast< ::DawnMud::Object_TypeFlag >(type_flags_.Get(index));
+}
+inline void Object::set_type_flags(int index, ::DawnMud::Object_TypeFlag value) {
+  type_flags_.Set(index, value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.type_flags)
+}
+inline void Object::add_type_flags(::DawnMud::Object_TypeFlag value) {
+  type_flags_.Add(value);
+  // @@protoc_insertion_point(field_add:DawnMud.Object.type_flags)
+}
+inline const ::google::protobuf::RepeatedField<int>&
+Object::type_flags() const {
+  // @@protoc_insertion_point(field_list:DawnMud.Object.type_flags)
+  return type_flags_;
+}
+inline ::google::protobuf::RepeatedField<int>*
+Object::mutable_type_flags() {
+  // @@protoc_insertion_point(field_mutable_list:DawnMud.Object.type_flags)
+  return &type_flags_;
+}
+
+// repeated .DawnMud.Object.EffectsBitvector effects = 10;
+inline int Object::effects_size() const {
+  return effects_.size();
+}
+inline void Object::clear_effects() {
+  effects_.Clear();
+}
+inline ::DawnMud::Object_EffectsBitvector Object::effects(int index) const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.effects)
+  return static_cast< ::DawnMud::Object_EffectsBitvector >(effects_.Get(index));
+}
+inline void Object::set_effects(int index, ::DawnMud::Object_EffectsBitvector value) {
+  effects_.Set(index, value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.effects)
+}
+inline void Object::add_effects(::DawnMud::Object_EffectsBitvector value) {
+  effects_.Add(value);
+  // @@protoc_insertion_point(field_add:DawnMud.Object.effects)
+}
+inline const ::google::protobuf::RepeatedField<int>&
+Object::effects() const {
+  // @@protoc_insertion_point(field_list:DawnMud.Object.effects)
+  return effects_;
+}
+inline ::google::protobuf::RepeatedField<int>*
+Object::mutable_effects() {
+  // @@protoc_insertion_point(field_mutable_list:DawnMud.Object.effects)
+  return &effects_;
+}
+
+// repeated .DawnMud.Object.WearBitvector wear = 11;
+inline int Object::wear_size() const {
+  return wear_.size();
+}
+inline void Object::clear_wear() {
+  wear_.Clear();
+}
+inline ::DawnMud::Object_WearBitvector Object::wear(int index) const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.wear)
+  return static_cast< ::DawnMud::Object_WearBitvector >(wear_.Get(index));
+}
+inline void Object::set_wear(int index, ::DawnMud::Object_WearBitvector value) {
+  wear_.Set(index, value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.wear)
+}
+inline void Object::add_wear(::DawnMud::Object_WearBitvector value) {
+  wear_.Add(value);
+  // @@protoc_insertion_point(field_add:DawnMud.Object.wear)
+}
+inline const ::google::protobuf::RepeatedField<int>&
+Object::wear() const {
+  // @@protoc_insertion_point(field_list:DawnMud.Object.wear)
+  return wear_;
+}
+inline ::google::protobuf::RepeatedField<int>*
+Object::mutable_wear() {
+  // @@protoc_insertion_point(field_mutable_list:DawnMud.Object.wear)
+  return &wear_;
+}
+
+// repeated sint32 value = 12;
+inline int Object::value_size() const {
+  return value_.size();
+}
+inline void Object::clear_value() {
+  value_.Clear();
+}
+inline ::google::protobuf::int32 Object::value(int index) const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.value)
+  return value_.Get(index);
+}
+inline void Object::set_value(int index, ::google::protobuf::int32 value) {
+  value_.Set(index, value);
+  // @@protoc_insertion_point(field_set:DawnMud.Object.value)
+}
+inline void Object::add_value(::google::protobuf::int32 value) {
+  value_.Add(value);
+  // @@protoc_insertion_point(field_add:DawnMud.Object.value)
+}
+inline const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+Object::value() const {
+  // @@protoc_insertion_point(field_list:DawnMud.Object.value)
+  return value_;
+}
+inline ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+Object::mutable_value() {
+  // @@protoc_insertion_point(field_mutable_list:DawnMud.Object.value)
+  return &value_;
+}
+
+// optional double weight = 13;
+inline void Object::clear_weight() {
+  weight_ = 0;
+}
+inline double Object::weight() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.weight)
+  return weight_;
+}
+inline void Object::set_weight(double value) {
+  
+  weight_ = value;
+  // @@protoc_insertion_point(field_set:DawnMud.Object.weight)
+}
+
+// optional double cost = 14;
+inline void Object::clear_cost() {
+  cost_ = 0;
+}
+inline double Object::cost() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.cost)
+  return cost_;
+}
+inline void Object::set_cost(double value) {
+  
+  cost_ = value;
+  // @@protoc_insertion_point(field_set:DawnMud.Object.cost)
+}
+
+// optional double rent_per_day = 15;
+inline void Object::clear_rent_per_day() {
+  rent_per_day_ = 0;
+}
+inline double Object::rent_per_day() const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.rent_per_day)
+  return rent_per_day_;
+}
+inline void Object::set_rent_per_day(double value) {
+  
+  rent_per_day_ = value;
+  // @@protoc_insertion_point(field_set:DawnMud.Object.rent_per_day)
+}
+
+// repeated .DawnMud.Object.ExtraDescription extra_descriptions = 16;
+inline int Object::extra_descriptions_size() const {
+  return extra_descriptions_.size();
+}
+inline void Object::clear_extra_descriptions() {
+  extra_descriptions_.Clear();
+}
+inline const ::DawnMud::Object_ExtraDescription& Object::extra_descriptions(int index) const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.extra_descriptions)
+  return extra_descriptions_.Get(index);
+}
+inline ::DawnMud::Object_ExtraDescription* Object::mutable_extra_descriptions(int index) {
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.extra_descriptions)
+  return extra_descriptions_.Mutable(index);
+}
+inline ::DawnMud::Object_ExtraDescription* Object::add_extra_descriptions() {
+  // @@protoc_insertion_point(field_add:DawnMud.Object.extra_descriptions)
+  return extra_descriptions_.Add();
+}
+inline ::google::protobuf::RepeatedPtrField< ::DawnMud::Object_ExtraDescription >*
+Object::mutable_extra_descriptions() {
+  // @@protoc_insertion_point(field_mutable_list:DawnMud.Object.extra_descriptions)
+  return &extra_descriptions_;
+}
+inline const ::google::protobuf::RepeatedPtrField< ::DawnMud::Object_ExtraDescription >&
+Object::extra_descriptions() const {
+  // @@protoc_insertion_point(field_list:DawnMud.Object.extra_descriptions)
+  return extra_descriptions_;
+}
+
+// repeated .DawnMud.Object.ObjectAffect object_affects = 17;
+inline int Object::object_affects_size() const {
+  return object_affects_.size();
+}
+inline void Object::clear_object_affects() {
+  object_affects_.Clear();
+}
+inline const ::DawnMud::Object_ObjectAffect& Object::object_affects(int index) const {
+  // @@protoc_insertion_point(field_get:DawnMud.Object.object_affects)
+  return object_affects_.Get(index);
+}
+inline ::DawnMud::Object_ObjectAffect* Object::mutable_object_affects(int index) {
+  // @@protoc_insertion_point(field_mutable:DawnMud.Object.object_affects)
+  return object_affects_.Mutable(index);
+}
+inline ::DawnMud::Object_ObjectAffect* Object::add_object_affects() {
+  // @@protoc_insertion_point(field_add:DawnMud.Object.object_affects)
+  return object_affects_.Add();
+}
+inline ::google::protobuf::RepeatedPtrField< ::DawnMud::Object_ObjectAffect >*
+Object::mutable_object_affects() {
+  // @@protoc_insertion_point(field_mutable_list:DawnMud.Object.object_affects)
+  return &object_affects_;
+}
+inline const ::google::protobuf::RepeatedPtrField< ::DawnMud::Object_ObjectAffect >&
+Object::object_affects() const {
+  // @@protoc_insertion_point(field_list:DawnMud.Object.object_affects)
+  return object_affects_;
+}
+
+// -------------------------------------------------------------------
+
+// ObjectList
+
+// repeated .DawnMud.Object object = 1;
+inline int ObjectList::object_size() const {
+  return object_.size();
+}
+inline void ObjectList::clear_object() {
+  object_.Clear();
+}
+inline const ::DawnMud::Object& ObjectList::object(int index) const {
+  // @@protoc_insertion_point(field_get:DawnMud.ObjectList.object)
+  return object_.Get(index);
+}
+inline ::DawnMud::Object* ObjectList::mutable_object(int index) {
+  // @@protoc_insertion_point(field_mutable:DawnMud.ObjectList.object)
+  return object_.Mutable(index);
+}
+inline ::DawnMud::Object* ObjectList::add_object() {
+  // @@protoc_insertion_point(field_add:DawnMud.ObjectList.object)
+  return object_.Add();
+}
+inline ::google::protobuf::RepeatedPtrField< ::DawnMud::Object >*
+ObjectList::mutable_object() {
+  // @@protoc_insertion_point(field_mutable_list:DawnMud.ObjectList.object)
+  return &object_;
+}
+inline const ::google::protobuf::RepeatedPtrField< ::DawnMud::Object >&
+ObjectList::object() const {
+  // @@protoc_insertion_point(field_list:DawnMud.ObjectList.object)
+  return object_;
+}
+
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -885,6 +2593,26 @@ template <> struct is_proto_enum< ::DawnMud::Zone_ResetMode> : ::google::protobu
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::DawnMud::Zone_ResetMode>() {
   return ::DawnMud::Zone_ResetMode_descriptor();
+}
+template <> struct is_proto_enum< ::DawnMud::Object_TypeFlag> : ::google::protobuf::internal::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::DawnMud::Object_TypeFlag>() {
+  return ::DawnMud::Object_TypeFlag_descriptor();
+}
+template <> struct is_proto_enum< ::DawnMud::Object_EffectsBitvector> : ::google::protobuf::internal::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::DawnMud::Object_EffectsBitvector>() {
+  return ::DawnMud::Object_EffectsBitvector_descriptor();
+}
+template <> struct is_proto_enum< ::DawnMud::Object_WearBitvector> : ::google::protobuf::internal::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::DawnMud::Object_WearBitvector>() {
+  return ::DawnMud::Object_WearBitvector_descriptor();
+}
+template <> struct is_proto_enum< ::DawnMud::Object_AffectTarget> : ::google::protobuf::internal::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::DawnMud::Object_AffectTarget>() {
+  return ::DawnMud::Object_AffectTarget_descriptor();
 }
 
 }  // namespace protobuf
