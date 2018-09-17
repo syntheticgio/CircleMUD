@@ -1,0 +1,243 @@
+autorun starting game Sat Sep 15 20:28:53 EDT 2018
+running bin/circle -q 4000
+Game Config File: etc/config: No such file or directory
+Sep 15 20:28:53 :: Using etc/config for configuration.
+Sep 15 20:28:53 :: CircleMUD, version 3.1
+Sep 15 20:28:53 :: OasisOLC 2.0.6
+Sep 15 20:28:53 :: Using lib as data directory.
+Sep 15 20:28:53 :: Running game on port 4000.
+Sep 15 20:28:53 :: Finding player limit.
+Sep 15 20:28:53 ::    Setting player limit to 300 using rlimit.
+Sep 15 20:28:53 :: Opening mother connection.
+Sep 15 20:28:53 :: Binding to all IP interfaces on this host.
+Sep 15 20:28:53 :: Boot db -- BEGIN.
+Sep 15 20:28:53 :: Resetting the game time:
+Sep 15 20:28:53 ::    Current Gametime: 15H 19D 14M 827Y.
+Sep 15 20:28:53 :: Reading news, credits, help, bground, info & motds.
+Sep 15 20:28:53 :: Loading spell definitions.
+Sep 15 20:28:53 :: Loading zone table.
+Sep 15 20:28:53 ::    30 zones, 1440 bytes.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/0.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/9.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/12.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/15.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/25.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/30.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/31.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/33.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/35.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/36.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/40.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/50.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/51.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/52.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/53.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/54.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/60.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/61.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/62.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/63.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/64.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/65.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/70.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/71.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/72.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/73.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/79.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/120.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/150.zon, attempting to fix.
+Sep 15 20:28:53 :: SYSERR: Format error in numeric constant line of world/zon/186.zon, attempting to fix.
+Sep 15 20:28:53 :: Loading rooms.
+Sep 15 20:28:53 ::    1880 rooms, 210560 bytes.
+Sep 15 20:28:53 :: Renumbering rooms.
+Sep 15 20:28:53 :: Checking start rooms.
+Sep 15 20:28:53 :: Loading mobs and generating index.
+Sep 15 20:28:53 ::    569 mobs, 9104 bytes in index, 268568 bytes in prototypes.
+Sep 15 20:28:53 :: Loading objs and generating index.
+Sep 15 20:28:53 ::    679 objs, 10864 bytes in index, 119504 bytes in prototypes.
+Sep 15 20:28:53 :: Renumbering zone table.
+Sep 15 20:28:53 :: Loading shops.
+Sep 15 20:28:53 :: Loading help entries.
+Sep 15 20:28:53 ::    298 entries, 7152 bytes.
+Sep 15 20:28:53 :: Generating player index.
+Sep 15 20:28:53 ::    1 players in database.
+Sep 15 20:28:53 :: Loading fight messages.
+Sep 15 20:28:53 :: Loading social messages.
+Sep 15 20:28:53 :: Social table contains 103 socials.
+Sep 15 20:28:53 :: Building command list.
+Sep 15 20:28:53 :: Command info rebuilt, 334 total commands.
+Sep 15 20:28:53 :: Assigning function pointers:
+Sep 15 20:28:53 ::    Mobiles.
+Sep 15 20:28:53 ::    Shopkeepers.
+Sep 15 20:28:53 ::    Objects.
+Sep 15 20:28:53 ::    Rooms.
+Sep 15 20:28:53 :: Assigning spell and skill levels.
+Sep 15 20:28:53 :: Sorting command list and spells.
+Sep 15 20:28:53 :: Booting mail system.
+Sep 15 20:28:53 ::    0 bytes read.
+Sep 15 20:28:53 ::    Mail file read -- 0 messages.
+Sep 15 20:28:53 :: Reading banned site and invalid-name list.
+Sep 15 20:28:53 ::    Ban file 'etc/badsites' doesn't exist.
+Sep 15 20:28:53 :: Booting houses.
+Sep 15 20:28:53 :: Resetting #0: Limbo - Internal (rooms 0-99).
+Sep 15 20:28:53 :: Resetting #9: River Island Of Minos (rooms 900-999).
+Sep 15 20:28:53 :: Resetting #12: God Simplex (rooms 1200-1299).
+Sep 15 20:28:53 :: Resetting #15: The Straight Path (rooms 1500-1599).
+Sep 15 20:28:53 :: Resetting #25: The High Tower Of Magic (rooms 2500-2699).
+Sep 15 20:28:53 :: Resetting #30: Northern Midgaard Main City (rooms 3000-3099).
+Sep 15 20:28:53 :: Resetting #31: Southern part of Midgaard (rooms 3100-3299).
+Sep 15 20:28:53 :: Resetting #33: The Three Of Swords (rooms 3300-3399).
+Sep 15 20:28:53 :: Resetting #35: Miden'Nir (rooms 3500-3599).
+Sep 15 20:28:53 :: Resetting #36: The Chessboard of Midgaard (rooms 3600-3699).
+Sep 15 20:28:53 :: Resetting #40: Mines of Moria (rooms 4000-4198).
+Sep 15 20:28:53 :: Resetting #50: The Great Eastern Desert (rooms 5000-5099).
+Sep 15 20:28:53 :: Resetting #51: Drow City (rooms 5100-5199).
+Sep 15 20:28:53 :: Resetting #52: The City Of Thalos (rooms 5200-5299).
+Sep 15 20:28:53 :: Resetting #53: The Great Pyramid (rooms 5300-5399).
+Sep 15 20:28:53 :: Resetting #54: New Thalos (rooms 5400-5699).
+Sep 15 20:28:53 :: Resetting #60: Haon-Dor, Light Forest (rooms 6000-6099).
+Sep 15 20:28:53 :: Resetting #61: Haon-Dor, Dark Forest (rooms 6100-6199).
+Sep 15 20:28:53 :: Resetting #62: The Orc Enclave (rooms 6200-6299).
+Sep 15 20:28:53 :: Resetting #63: Arachnos (rooms 6300-6399).
+Sep 15 20:28:53 :: Resetting #64: Rand's Tower (rooms 6400-6499).
+Sep 15 20:28:53 :: Resetting #65: The Dwarven Kingdom (rooms 6500-6599).
+Sep 15 20:28:53 :: Resetting #70: The Sewer, First Level (rooms 7000-7099).
+Sep 15 20:28:53 :: Resetting #71: The Second Sewer (rooms 7100-7199).
+Sep 15 20:28:53 :: Resetting #72: The Sewer Maze (rooms 7200-7299).
+Sep 15 20:28:53 :: Resetting #73: The Tunnels In The Sewer (rooms 7300-7399).
+Sep 15 20:28:53 :: Resetting #79: Redferne's Residence (rooms 7900-7999).
+Sep 15 20:28:53 :: Resetting #120: Rome (rooms 12000-12099).
+Sep 15 20:28:53 :: Resetting #150: King Welmar's Castle (rooms 15000-15099).
+Sep 15 20:28:53 :: Resetting #186: Newbie Zone (rooms 18600-18699).
+Sep 15 20:28:53 :: Boot db -- DONE.
+Sep 15 20:28:53 :: Signal trapping.
+Sep 15 20:28:53 :: Entering game loop.
+Sep 15 20:28:53 :: No connections.  Going to sleep.
+Sep 15 20:29:05 :: SYSERR: Received SIGHUP, SIGINT, or SIGTERM.  Shutting down...
+Quick boot mode -- rent check supressed.
+Using file descriptor for logging.
+autorun starting game Sat Sep 15 20:29:51 EDT 2018
+running bin/circle -q 4000
+Game Config File: etc/config: No such file or directory
+Sep 15 20:29:51 :: Using etc/config for configuration.
+Sep 15 20:29:51 :: CircleMUD, version 3.1
+Sep 15 20:29:51 :: OasisOLC 2.0.6
+Sep 15 20:29:51 :: Using lib as data directory.
+Sep 15 20:29:51 :: Running game on port 4000.
+Sep 15 20:29:51 :: Finding player limit.
+Sep 15 20:29:51 ::    Setting player limit to 300 using rlimit.
+Sep 15 20:29:51 :: Opening mother connection.
+Sep 15 20:29:51 :: Binding to all IP interfaces on this host.
+Sep 15 20:29:51 :: Boot db -- BEGIN.
+Sep 15 20:29:51 :: Resetting the game time:
+Sep 15 20:29:51 ::    Current Gametime: 16H 19D 14M 827Y.
+Sep 15 20:29:51 :: Reading news, credits, help, bground, info & motds.
+Sep 15 20:29:51 :: Loading spell definitions.
+Sep 15 20:29:51 :: Loading zone table.
+Sep 15 20:29:51 ::    30 zones, 1440 bytes.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/0.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/9.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/12.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/15.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/25.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/30.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/31.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/33.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/35.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/36.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/40.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/50.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/51.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/52.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/53.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/54.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/60.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/61.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/62.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/63.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/64.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/65.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/70.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/71.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/72.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/73.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/79.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/120.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/150.zon, attempting to fix.
+Sep 15 20:29:51 :: SYSERR: Format error in numeric constant line of world/zon/186.zon, attempting to fix.
+Sep 15 20:29:51 :: Loading rooms.
+Sep 15 20:29:51 ::    1880 rooms, 210560 bytes.
+Sep 15 20:29:51 :: Renumbering rooms.
+Sep 15 20:29:51 :: Checking start rooms.
+Sep 15 20:29:51 :: Loading mobs and generating index.
+Sep 15 20:29:51 ::    569 mobs, 9104 bytes in index, 268568 bytes in prototypes.
+Sep 15 20:29:51 :: Loading objs and generating index.
+Sep 15 20:29:51 ::    679 objs, 10864 bytes in index, 119504 bytes in prototypes.
+Sep 15 20:29:51 :: Renumbering zone table.
+Sep 15 20:29:51 :: Loading shops.
+Sep 15 20:29:51 :: Loading help entries.
+Sep 15 20:29:51 ::    298 entries, 7152 bytes.
+Sep 15 20:29:51 :: Generating player index.
+Sep 15 20:29:51 ::    1 players in database.
+Sep 15 20:29:51 :: Loading fight messages.
+Sep 15 20:29:51 :: Loading social messages.
+Sep 15 20:29:51 :: Social table contains 103 socials.
+Sep 15 20:29:51 :: Building command list.
+Sep 15 20:29:51 :: Command info rebuilt, 334 total commands.
+Sep 15 20:29:51 :: Assigning function pointers:
+Sep 15 20:29:51 ::    Mobiles.
+Sep 15 20:29:51 ::    Shopkeepers.
+Sep 15 20:29:51 ::    Objects.
+Sep 15 20:29:51 ::    Rooms.
+Sep 15 20:29:51 :: Assigning spell and skill levels.
+Sep 15 20:29:51 :: Sorting command list and spells.
+Sep 15 20:29:51 :: Booting mail system.
+Sep 15 20:29:51 ::    0 bytes read.
+Sep 15 20:29:51 ::    Mail file read -- 0 messages.
+Sep 15 20:29:51 :: Reading banned site and invalid-name list.
+Sep 15 20:29:51 ::    Ban file 'etc/badsites' doesn't exist.
+Sep 15 20:29:51 :: Booting houses.
+Sep 15 20:29:51 :: Resetting #0: Limbo - Internal (rooms 0-99).
+Sep 15 20:29:51 :: Resetting #9: River Island Of Minos (rooms 900-999).
+Sep 15 20:29:51 :: Resetting #12: God Simplex (rooms 1200-1299).
+Sep 15 20:29:51 :: Resetting #15: The Straight Path (rooms 1500-1599).
+Sep 15 20:29:51 :: Resetting #25: The High Tower Of Magic (rooms 2500-2699).
+Sep 15 20:29:51 :: Resetting #30: Northern Midgaard Main City (rooms 3000-3099).
+Sep 15 20:29:51 :: Resetting #31: Southern part of Midgaard (rooms 3100-3299).
+Sep 15 20:29:51 :: Resetting #33: The Three Of Swords (rooms 3300-3399).
+Sep 15 20:29:51 :: Resetting #35: Miden'Nir (rooms 3500-3599).
+Sep 15 20:29:51 :: Resetting #36: The Chessboard of Midgaard (rooms 3600-3699).
+Sep 15 20:29:51 :: Resetting #40: Mines of Moria (rooms 4000-4198).
+Sep 15 20:29:51 :: Resetting #50: The Great Eastern Desert (rooms 5000-5099).
+Sep 15 20:29:51 :: Resetting #51: Drow City (rooms 5100-5199).
+Sep 15 20:29:51 :: Resetting #52: The City Of Thalos (rooms 5200-5299).
+Sep 15 20:29:51 :: Resetting #53: The Great Pyramid (rooms 5300-5399).
+Sep 15 20:29:51 :: Resetting #54: New Thalos (rooms 5400-5699).
+Sep 15 20:29:51 :: Resetting #60: Haon-Dor, Light Forest (rooms 6000-6099).
+Sep 15 20:29:51 :: Resetting #61: Haon-Dor, Dark Forest (rooms 6100-6199).
+Sep 15 20:29:51 :: Resetting #62: The Orc Enclave (rooms 6200-6299).
+Sep 15 20:29:51 :: Resetting #63: Arachnos (rooms 6300-6399).
+Sep 15 20:29:51 :: Resetting #64: Rand's Tower (rooms 6400-6499).
+Sep 15 20:29:51 :: Resetting #65: The Dwarven Kingdom (rooms 6500-6599).
+Sep 15 20:29:51 :: Resetting #70: The Sewer, First Level (rooms 7000-7099).
+Sep 15 20:29:51 :: Resetting #71: The Second Sewer (rooms 7100-7199).
+Sep 15 20:29:51 :: Resetting #72: The Sewer Maze (rooms 7200-7299).
+Sep 15 20:29:51 :: Resetting #73: The Tunnels In The Sewer (rooms 7300-7399).
+Sep 15 20:29:51 :: Resetting #79: Redferne's Residence (rooms 7900-7999).
+Sep 15 20:29:51 :: Resetting #120: Rome (rooms 12000-12099).
+Sep 15 20:29:51 :: Resetting #150: King Welmar's Castle (rooms 15000-15099).
+Sep 15 20:29:51 :: Resetting #186: Newbie Zone (rooms 18600-18699).
+Sep 15 20:29:51 :: Boot db -- DONE.
+Sep 15 20:29:51 :: Signal trapping.
+Sep 15 20:29:51 :: Entering game loop.
+Sep 15 20:29:51 :: No connections.  Going to sleep.
+Sep 15 20:30:00 :: New connection.  Waking up.
+Sep 15 20:30:06 :: Fate [localhost] has connected.
+Sep 15 20:30:26 :: Fate un-renting and entering game.
+Sep 15 20:30:26 :: Fate (level 54) has 17 objects (max 30).
+Sep 15 20:31:02 :: Fate has quit the game.
+Sep 15 20:31:04 :: Losing player: Fate.
+Sep 15 20:31:04 :: No connections.  Going to sleep.
+Sep 15 20:32:04 :: SYSERR: Received SIGHUP, SIGINT, or SIGTERM.  Shutting down...
+Quick boot mode -- rent check supressed.
+Using file descriptor for logging.

@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CircleMUD"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/joro/Programming/CircleMUD/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/joro/Programming/CircleMUD/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/joro/Programming/CircleMUD/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CircleMUD">
+				<Option output="/home/joro/Programming/CircleMUD/cmake-build-debug/CircleMUD" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/joro/Programming/CircleMUD/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/joro/Programming/CircleMUD/cnf"/>
+					<Add directory="/home/joro/Programming/CircleMUD/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 CircleMUD"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CircleMUD/fast">
+				<Option output="/home/joro/Programming/CircleMUD/cmake-build-debug/CircleMUD" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/joro/Programming/CircleMUD/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/joro/Programming/CircleMUD/cnf"/>
+					<Add directory="/home/joro/Programming/CircleMUD/src"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 CircleMUD/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/joro/Programming/CircleMUD/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/joro/Programming/CircleMUD/ChangeLog">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/FAQ">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/README">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/automaint">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/autorun">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/autorun.README">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/autorun.amiga">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/autorun.cmd">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/autorun.pl">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/autorun.sh">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/bin/README">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/bin/autowiz">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/bin/circle">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/bin/delobjs">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/bin/listrent">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/bin/mudpasswd">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/bin/play2to3">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/bin/purgeplay">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/bin/shopconv">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/bin/showplay">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/bin/sign">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/bin/split">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/bin/wld2html">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/cnf/README">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/cnf/acconfig.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/cnf/aclocal.m4">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/cnf/configure.in">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/config.cache">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/config.log">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/config.status">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/configure">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/FAQ.pdf">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/README">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/README-DOCS">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/coding.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/color.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/comm.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/database.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/dbsup.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/defs.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/do_mail">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/files.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/hacker.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/handler.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/header">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/license.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/release.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/running.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/shop.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/socials.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/spell_info.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/spells.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/time.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/utils.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/OLD-DOCS/values.doc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/README.AMIGA">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/README.ARC">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/README.BORLAND">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/README.CYGWIN">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/README.MSVC4">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/README.MSVC5">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/README.MSVC6">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/README.OS2">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/README.UNIX">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/README.VMS">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/README.WATCOM">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/README.WIN">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/act.pdf">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/admin.pdf">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/building.pdf">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/coding.pdf">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/color.pdf">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/files.pdf">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/hacker.pdf">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/license.pdf">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/license.txt">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/porting.pdf">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/release.pdf">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/socials.pdf">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/sources/FAQ.tex">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/sources/README">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/sources/act.tex">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/sources/admin.tex">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/sources/building.tex">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/sources/coding.tex">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/sources/color.tex">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/sources/files.tex">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/sources/hacker.tex">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/sources/license.tex">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/sources/porting.tex">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/sources/release.tex">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/sources/socials.tex">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/sources/utils.tex">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/sources/wizhelp.tex">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/syserr.txt">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/utils.pdf">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/wizhelp.pdf">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/doc/wizhelp.txt">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/README">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/etc/README">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/etc/hcontrol">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/etc/players">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/etc/plrmail">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/etc/time">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/house/README">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/misc/bugs">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/misc/ideas">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/misc/messages">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/misc/socials">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/misc/socials.new">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/misc/typos">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/misc/xnames">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/plralias/A-E/00">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/plralias/F-J/00">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/plralias/K-O/00">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/plralias/P-T/00">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/plralias/U-Z/00">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/plralias/ZZZ/00">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/plrobjs/A-E/00">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/plrobjs/F-J/00">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/plrobjs/F-J/fate.objs">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/plrobjs/K-O/00">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/plrobjs/P-T/00">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/plrobjs/U-Z/00">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/plrobjs/ZZZ/00">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/plrobjs/purgedir">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/plrobjs/purgeobjs">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/plrobjs/searchfor">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/background">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/credits">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/greetings">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/handbook">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/help/commands.hlp">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/help/index">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/help/index.mini">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/help/info.hlp">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/help/screen">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/help/socials.hlp">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/help/spells.hlp">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/help/wizhelp.hlp">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/immlist">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/imotd">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/info">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/motd">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/news">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/policies">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/text/wizlist">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/README">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/README.CAW">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/0.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/12.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/120.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/15.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/150.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/186.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/25.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/30.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/31.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/33.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/35.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/36.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/40.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/50.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/51.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/52.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/53.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/54.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/60.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/61.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/62.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/63.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/64.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/65.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/70.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/72.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/79.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/9.mob">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/index">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/mob/index.mini">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/0.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/120.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/15.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/150.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/186.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/25.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/30.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/31.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/33.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/35.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/36.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/40.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/50.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/51.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/52.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/53.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/54.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/60.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/61.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/62.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/63.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/64.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/65.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/71.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/72.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/79.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/9.obj">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/index">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/obj/index.mini">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/shp/120.shp">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/shp/150.shp">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/shp/25.shp">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/shp/30.shp">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/shp/31.shp">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/shp/33.shp">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/shp/54.shp">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/shp/65.shp">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/shp/index">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/shp/index.mini">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/shp/shop-convert.pl">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/0.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/12.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/120.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/15.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/150.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/186.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/25.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/30.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/31.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/33.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/35.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/36.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/40.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/50.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/51.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/52.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/53.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/54.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/60.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/61.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/62.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/63.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/64.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/65.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/70.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/71.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/72.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/79.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/9.wld">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/index">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/wld/index.mini">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/0.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/12.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/120.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/15.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/150.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/186.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/25.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/30.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/31.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/33.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/35.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/36.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/40.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/50.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/51.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/52.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/53.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/54.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/60.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/61.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/62.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/63.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/64.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/65.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/70.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/71.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/72.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/73.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/79.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/9.zon">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/index">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zon/index.mini">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/lib/world/zone.lst">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/log/README">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/macrun.pl">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/release_notes.3.1.txt">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/GameManager.cpp">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/GameManager.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/Makefile">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/Makefile.amiga">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/Makefile.arc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/Makefile.bcc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/Makefile.bcc55">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/Makefile.in">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/Makefile.lcc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/Makefile.msvc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/Makefile.os2">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/ObjectManager.cpp">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/ObjectManager.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/SCOPTIONS">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/Smakefile">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/TODO">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/ZoneManager.cpp">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/ZoneManager.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/act.comm.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/act.comm.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/act.informative.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/act.informative.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/act.item.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/act.item.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/act.movement.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/act.movement.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/act.offensive.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/act.offensive.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/act.other.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/act.other.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/act.social.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/act.social.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/act.wizard.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/act.wizard.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/aedit.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/aedit.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/alias.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/alias.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/ban.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/ban.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/boards.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/boards.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/boards.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/bsd-snprintf.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/bsd-snprintf.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/bsd-snprintf.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/build_circlemud.com">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/castle.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/castle.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/cedit.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/cedit.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/class.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/class.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/comm.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/comm.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/comm.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/conf.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/conf.h.amiga">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/conf.h.arc">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/conf.h.in">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/conf.h.mac">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/conf.h.os2">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/conf.h.vms">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/conf.h.win">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/config.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/config.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/constants.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/constants.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/constants.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/db.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/db.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/db.hpp">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/db.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/depend">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/fight.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/fight.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/genmob.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/genmob.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/genmob.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/genobj.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/genobj.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/genobj.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/genolc.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/genolc.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/genolc.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/genshp.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/genshp.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/genshp.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/genwld.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/genwld.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/genwld.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/genzon.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/genzon.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/genzon.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/graph.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/graph.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/handler.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/handler.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/handler.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/house.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/house.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/house.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/htmlh-head">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/htmlh-tail">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/improved-edit.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/improved-edit.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/improved-edit.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/interpreter.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/interpreter.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/interpreter.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/licheck">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/limits.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/limits.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/magic.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/magic.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/mail.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/mail.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/mail.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/medit.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/medit.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/mobact.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/mobact.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/modify.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/modify.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/oasis.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/oasis.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/oasis.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/oasis_copy.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/oasis_copy.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/oasis_delete.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/oasis_delete.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/oasis_delete.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/oasis_list.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/oasis_list.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/objsave.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/objsave.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/oedit.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/oedit.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/olc.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/olc.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/olc.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/oo/main.cpp">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/random.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/random.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/redit.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/redit.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/screen.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/sedit.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/sedit.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/shop.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/shop.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/shop.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/spec_assign.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/spec_assign.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/spec_procs.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/spec_procs.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/spell_parser.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/spell_parser.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/spells.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/spells.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/spells.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/structs.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/sysdep.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/tedit.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/tedit.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/tedit.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/telnet.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/util/Makefile">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/util/Makefile.in">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/util/autowiz.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/util/delobjs.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/util/listrent.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/util/mudpasswd.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/util/play2to3.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/util/purgeplay.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/util/scheck">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/util/shopconv.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/util/showplay.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/util/sign.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/util/split.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/util/wld2html.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/utils.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/utils.h">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/utils.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/weather.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/weather.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/zedit.c">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/src/zedit.o">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/syslog">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/vms_autorun.com">
+			<Option target="CircleMUD"/>
+		</Unit>
+		<Unit filename="/home/joro/Programming/CircleMUD/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,53 +1,64 @@
 #include "structs.h"
-#include  <vector>
+#include <vector>
+#include <string>
+#include <iostream>
+#include <filesystem>
+#include <fstream>
+#include "proto/dawnmud.pb.h"
+
 using namespace std;
 
 class Entity {
-    
+
     virtual void myfunction() = 0;
-    
+
     room_rnum in_room;                          /* Location (real room number)	  */
-    room_rnum was_in_room;		                /* location for linkdead people  */
-    int wait;				                    /* wait for how many loops	  */
+    room_rnum was_in_room;                        /* location for linkdead people  */
+    int wait;                                    /* wait for how many loops	  */
 
     struct char_player_data player;             /* Normal data                   */
-    struct char_ability_data real_abils;	    /* Abilities without modifiers   */
-    struct char_ability_data aff_abils;	        /* Abils with spells/stones/etc  */
+    struct char_ability_data real_abils;        /* Abilities without modifiers   */
+    struct char_ability_data aff_abils;            /* Abils with spells/stones/etc  */
     struct char_point_data points;              /* Points                        */
-    struct char_special_data char_specials;	    /* PC/NPC specials	  */
+    struct char_special_data char_specials;        /* PC/NPC specials	  */
     struct player_special_data *player_specials; /* PC specials		  */
 
-    vector <struct affected_type> affected_v;
+    vector<struct affected_type> affected_v;
     struct affected_type *affected;             /* affected by what spells       */
 
-    vector <struct obj_data> equipment_v;
+    vector<struct obj_data> equipment_v;
     struct obj_data *equipment[NUM_WEARS];      /* Equipment array               */
 
-    vector <struct obj_data> carrying_v;
+    vector<struct obj_data> carrying_v;
     struct obj_data *carrying;                  /* Head of list                  */
 
     struct descriptor_data *desc;               /* NULL for mobiles              */
 
-    vector <struct char_data> next_in_room_v;
+    vector<struct char_data> next_in_room_v;
     struct char_data *next_in_room;             /* For room->people - list         */
-    vector <struct char_data> next_v;
+    vector<struct char_data> next_v;
     struct char_data *next;                     /* For either monster or ppl-list  */
-    vector <struct char_data> next_fighting_v;
+    vector<struct char_data> next_fighting_v;
     struct char_data *next_fighting;            /* For fighting list               */
 
-    vector <struct follow_type> followers_v;
+    vector<struct follow_type> followers_v;
     struct follow_type *followers;              /* List of chars followers       */
-    vector <struct char_data> master_v;
+    vector<struct char_data> master_v;
     struct char_data *master;                   /* Who is char following?        */
 
+public:
+
     Entity() : equipment_v(NUM_WEARS) {};
+    //Entity() {    };
 };
 
 /**
  * Character base class, covers NPCs and characters
  */
 class Character : Entity {
+public:
     Character() {};
+
     ~Character() {};
 
 };
@@ -56,11 +67,13 @@ class Character : Entity {
  * This would be the player class.
  */
 class Player : Character {
+public:
     Player() {};
+
     ~Player() {};
 
 
-    int pfilepos;			 /* playerfile pos		  */
+    int pfilepos;             /* playerfile pos		  */
 
 };
 
@@ -68,16 +81,19 @@ class Player : Character {
  * This is the NPC class
  */
 class NPC : Character {
+public:
     NPC() {};
     ~NPC() {};
 };
 
 class Mobile : Entity {
+public:
     Mobile() {};
+
     ~Mobile() {};
 
     mob_rnum nr;                          /* Mob's rnum			  */
-    struct mob_special_data mob_specials;	/* NPC specials		  */
+    struct mob_special_data mob_specials;    /* NPC specials		  */
 
 };
 

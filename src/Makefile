@@ -9,7 +9,7 @@ CC = gcc
 CXREF = cxref
 
 # Any special flags you want to pass to the compiler
-MYFLAGS = -Wall -Wno-char-subscripts
+MYFLAGS = -Wall -Wno-char-subscripts -Wno-unused-result
 
 #flags for profiling (see hacker.doc for more information)
 PROFILE = 

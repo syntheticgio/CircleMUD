@@ -1,0 +1,176 @@
+syntax = "proto3";
+
+package DawnMud;
+
+message Zone {
+	string name = 1;
+	repeated string builders = 2;
+	sint32 lifespan = 3;
+	sint32 age = 4;
+	sint32 bot = 5;
+	sint32 top = 6;
+
+	enum ResetMode {
+		NO_RESET = 0;
+		RESET = 1;
+		HARD_RESET = 2;
+	}
+	ResetMode reset_mode = 7;
+	sint32 number = 8;
+
+	message ResetCommands {
+		enum Commands {
+			READ_MOBILE = 0;
+			READ_OBJECT = 1;
+			GIVE_OBJ_MOB = 2;
+			PUT_OBJ_OBJ = 3;
+			GIVE_OBJ_CHAR = 4;
+			OBJ_CHAR_EQUIP = 5;
+			STATE_OF_DOOR = 6;
+		}
+		Commands command = 1;
+
+		bool if_flag = 2;
+		sint32 arg1 = 3;
+		sint32 arg2 = 4;
+		sint32 arg3 = 5;
+		sint32 line = 6;
+	}
+	repeated ResetCommands reset_com = 9;
+}
+
+message ZoneList {
+    repeated Zone zone = 1;
+}
+
+message Object {
+	sint32 number = 1;
+	repeated string alias_list = 2;
+	string short_description = 3;
+	string long_description = 4;
+	string action_description_to_room = 5;
+	string action_description_to_vict = 6;
+	string action_description_to_char = 7;
+	string action_description_to_sleep = 8;
+
+	enum TypeFlag {
+		NONE = 0;
+		LIGHT = 1;
+		SCROLL = 2;
+		WAND = 3;
+		STAFF = 4;
+		WEAPON = 5;
+		FIREWEAPON = 6;
+		MISSILE = 7;
+		TREASURE = 8;
+		ARMOR = 9;
+		POTION = 10;
+		WORN = 11;
+		OTHER = 12;
+		TRASH = 13;
+		TRAP = 14;
+		CONTAINER = 15;
+		NOTE = 16;
+		DRINKCON = 17;
+		KEY = 18;
+		FOOD = 19;
+		MONEY = 20;
+		PEN = 21;
+		BOAT = 22;
+		FOUNTAIN = 23;
+	}
+	repeated TypeFlag type_flags = 9;
+
+	enum EffectsBitvector {
+		NO_EFFECT = 0;
+		GLOW = 1;
+		HUM = 2;
+		NORENT = 3;
+		NODONATE = 4;
+		NOINVIS = 5;
+		INVISIBLE = 6;
+		MAGIC = 7;
+		NODROP = 8;
+		BLESS = 9;
+		ANTI_GOOD = 10;
+		ANTI_EVIL = 11;
+		ANTI_NEUTRAL = 12;
+		ANTI_MAGIC_USER = 13;
+		ANTI_CLERIC = 14;
+		ANTI_THIEF = 15;
+		ANTI_WARRIOR = 16;
+		NOSELL = 17;
+		ANTI_RANGER = 18;
+	}
+	repeated EffectsBitvector effects = 10;
+
+	enum WearBitvector {
+		NO_WEAR = 0;
+		WEAR_TAKE = 1;
+		WEAR_FINGER = 2;
+		WEAR_NECK = 3;
+		WEAR_BODY = 4;
+		WEAR_HEAD = 5;
+		WEAR_LEGS = 6;
+		WEAR_FEET = 7;
+		WEAR_HANDS = 8;
+		WEAR_ARMS = 9;
+		WEAR_SHIELD = 10;
+		WEAR_ABOUT = 11;
+		WEAR_WAIST = 12;
+		WEAR_WRIST = 13;
+		WEAR_WIELD = 14;
+		WEAR_HOLD = 15;
+	}
+	repeated WearBitvector wear = 11;
+
+	repeated sint32 value = 12;
+
+	double weight = 13;
+	double cost = 14;
+	double rent_per_day = 15;
+
+	message ExtraDescription {
+		repeated string keyword_list = 1;
+		string description_text = 2;
+	}
+	repeated ExtraDescription extra_descriptions = 16;
+
+	enum AffectTarget {
+		NONE = 0;
+		STR = 1;
+		DEX = 2;
+		INT = 3;
+		WIS = 4;
+		CON = 5;
+		CHA = 6;
+		CLASS = 7;
+		LEVEL = 8;
+		AGE = 9;
+		CHAR_WEIGHT = 10;
+		CHAR_HEIGHT = 11;
+		MANA = 12;
+		HIT = 13;
+		MOVE = 14;
+		GOLD = 15;
+		EXP = 16;
+		AC = 17;
+		HITROLL = 18;
+		DAMROLL = 19;
+		SAVING_PARA = 20;
+		SAVING_ROD = 21;
+		SAVING_PETRI = 22;
+		SAVING_BREATH = 23;
+		SAVING_SPELL = 24;
+	}
+
+	message ObjectAffect {
+		AffectTarget target = 1;
+		sint32 affect = 2;
+	}
+	repeated ObjectAffect object_affects = 17;
+}
+
+message ObjectList {
+	repeated Object object = 1;
+}

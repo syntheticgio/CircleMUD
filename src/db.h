@@ -164,7 +164,7 @@ struct reset_com {
 
 /* zone definition structure. for the 'zone-table'   */
 struct zone_data {
-   char	*name;		    /* name of this zone                  */
+   char	*name;    		    /* name of this zone                  */
    char *builders;          /* namelist of builders allowed to    */
                             /* modify this zone.		  */
    int	lifespan;           /* how long between resets (minutes)  */
