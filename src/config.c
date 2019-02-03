@@ -14,7 +14,7 @@
 #include "sysdep.h"
 
 #include "structs.h"
-#include "interpreter.h"	/* alias_data definition for structs.h */
+#include "interpreter.h" /* alias_data definition for structs.h */
 
 /*
  * Update:  The following constants and variables are now the default values
@@ -43,7 +43,6 @@
 /****************************************************************************/
 /****************************************************************************/
 
-
 /* GAME PLAY OPTIONS */
 #if !defined(NO)
 #define NO 0
@@ -58,7 +57,7 @@
 #endif
 
 #if !defined(TRUE)
-#define TRUE  (!FALSE)
+#define TRUE (!FALSE)
 #endif
 
 /*
@@ -85,8 +84,8 @@ int holler_move_cost = 20;
 int tunnel_size = 2;
 
 /* exp change limits */
-int max_exp_gain = 100000;	/* max gainable per kill */
-int max_exp_loss = 500000;	/* max losable per death */
+int max_exp_gain = 100000; /* max gainable per kill */
+int max_exp_loss = 500000; /* max losable per death */
 
 /* number of tics (usually 75 seconds) before PC/NPC corpses decompose */
 int max_npc_corpse_time = 5;
@@ -135,10 +134,8 @@ int track_through_doors = YES;
  */
 int immort_level_ok = 0;
 
-
 /****************************************************************************/
 /****************************************************************************/
-
 
 /* RENT/CRASHSAVE OPTIONS */
 
@@ -176,10 +173,8 @@ int crash_file_timeout = 10;
 /* Lifetime of normal rent files in days */
 int rent_file_timeout = 30;
 
-
 /****************************************************************************/
 /****************************************************************************/
-
 
 /* ROOM NUMBERS */
 
@@ -198,13 +193,11 @@ room_vnum frozen_start_room = 1202;
  * donation rooms.
  */
 room_vnum donation_room_1 = 3063;
-room_vnum donation_room_2 = NOWHERE;	/* unused - room for expansion */
-room_vnum donation_room_3 = NOWHERE;	/* unused - room for expansion */
-
+room_vnum donation_room_2 = NOWHERE; /* unused - room for expansion */
+room_vnum donation_room_3 = NOWHERE; /* unused - room for expansion */
 
 /****************************************************************************/
 /****************************************************************************/
-
 
 /* GAME OPERATION OPTIONS */
 
@@ -295,32 +288,29 @@ int auto_save_olc = 1;
 int use_new_socials = 0;
 
 const char *MENU =
-"\r\n"
-"Welcome to CircleMUD!\r\n"
-"0) Exit from CircleMUD.\r\n"
-"1) Enter the game.\r\n"
-"2) Enter description.\r\n"
-"3) Read the background story.\r\n"
-"4) Change password.\r\n"
-"5) Delete this character.\r\n"
-"\r\n"
-"   Make your choice: ";
-
-
+    "\r\n"
+    "Welcome to CircleMUD!\r\n"
+    "0) Exit from CircleMUD.\r\n"
+    "1) Enter the game.\r\n"
+    "2) Enter description.\r\n"
+    "3) Read the background story.\r\n"
+    "4) Change password.\r\n"
+    "5) Delete this character.\r\n"
+    "\r\n"
+    "   Make your choice: ";
 
 const char *WELC_MESSG =
-"\r\n"
-"Welcome to the land of CircleMUD!  May your visit here be... Interesting."
-"\r\n\r\n";
+    "\r\n"
+    "Welcome to the land of CircleMUD!  May your visit here be... Interesting."
+    "\r\n\r\n";
 
 const char *START_MESSG =
-"Welcome.  This is your new CircleMUD character!  You can now earn gold,\r\n"
-"gain experience, find weapons and equipment, and much more -- while\r\n"
-"meeting people from around the world!\r\n";
+    "Welcome.  This is your new CircleMUD character!  You can now earn gold,\r\n"
+    "gain experience, find weapons and equipment, and much more -- while\r\n"
+    "meeting people from around the world!\r\n";
 
 /****************************************************************************/
 /****************************************************************************/
-
 
 /* AUTOWIZ OPTIONS */
 

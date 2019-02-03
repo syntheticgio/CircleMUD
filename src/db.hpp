@@ -1,103 +1,86 @@
 #include "structs.h"
 #include <vector>
-#include <string>
-#include <iostream>
-#include <filesystem>
-#include <fstream>
-#include "proto/dawnmud.pb.h"
-
 using namespace std;
 
-class Entity {
+class Entity
+{
 
     virtual void myfunction() = 0;
 
-    room_rnum in_room;                          /* Location (real room number)	  */
-    room_rnum was_in_room;                        /* location for linkdead people  */
-    int wait;                                    /* wait for how many loops	  */
+    room_rnum in_room;     /* Location (real room number)	  */
+    room_rnum was_in_room; /* location for linkdead people  */
+    int wait;              /* wait for how many loops	  */
 
-    struct char_player_data player;             /* Normal data                   */
-    struct char_ability_data real_abils;        /* Abilities without modifiers   */
-    struct char_ability_data aff_abils;            /* Abils with spells/stones/etc  */
-    struct char_point_data points;              /* Points                        */
-    struct char_special_data char_specials;        /* PC/NPC specials	  */
+    struct char_player_data player;              /* Normal data                   */
+    struct char_ability_data real_abils;         /* Abilities without modifiers   */
+    struct char_ability_data aff_abils;          /* Abils with spells/stones/etc  */
+    struct char_point_data points;               /* Points                        */
+    struct char_special_data char_specials;      /* PC/NPC specials	  */
     struct player_special_data *player_specials; /* PC specials		  */
 
     vector<struct affected_type> affected_v;
-    struct affected_type *affected;             /* affected by what spells       */
+    struct affected_type *affected; /* affected by what spells       */
 
     vector<struct obj_data> equipment_v;
-    struct obj_data *equipment[NUM_WEARS];      /* Equipment array               */
+    struct obj_data *equipment[NUM_WEARS]; /* Equipment array               */
 
     vector<struct obj_data> carrying_v;
-    struct obj_data *carrying;                  /* Head of list                  */
+    struct obj_data *carrying; /* Head of list                  */
 
-    struct descriptor_data *desc;               /* NULL for mobiles              */
+    struct descriptor_data *desc; /* NULL for mobiles              */
 
     vector<struct char_data> next_in_room_v;
-    struct char_data *next_in_room;             /* For room->people - list         */
+    struct char_data *next_in_room; /* For room->people - list         */
     vector<struct char_data> next_v;
-    struct char_data *next;                     /* For either monster or ppl-list  */
+    struct char_data *next; /* For either monster or ppl-list  */
     vector<struct char_data> next_fighting_v;
-    struct char_data *next_fighting;            /* For fighting list               */
+    struct char_data *next_fighting; /* For fighting list               */
 
     vector<struct follow_type> followers_v;
-    struct follow_type *followers;              /* List of chars followers       */
+    struct follow_type *followers; /* List of chars followers       */
     vector<struct char_data> master_v;
-    struct char_data *master;                   /* Who is char following?        */
+    struct char_data *master; /* Who is char following?        */
 
-public:
-
-    Entity() : equipment_v(NUM_WEARS) {};
-    //Entity() {    };
+    Entity() : equipment_v(NUM_WEARS){};
 };
 
 /**
  * Character base class, covers NPCs and characters
  */
-class Character : Entity {
-public:
-    Character() {};
-
-    ~Character() {};
-
+class Character : Entity
+{
+    Character(){};
+    ~Character(){};
 };
 
 /**
  * This would be the player class.
  */
-class Player : Character {
-public:
-    Player() {};
+class Player : Character
+{
+    Player(){};
+    ~Player(){};
 
-    ~Player() {};
-
-
-    int pfilepos;             /* playerfile pos		  */
-
+    int pfilepos; /* playerfile pos		  */
 };
 
 /**
  * This is the NPC class
  */
-class NPC : Character {
-public:
-    NPC() {};
-    ~NPC() {};
+class NPC : Character
+{
+    NPC(){};
+    ~NPC(){};
 };
 
-class Mobile : Entity {
-public:
-    Mobile() {};
-
-    ~Mobile() {};
+class Mobile : Entity
+{
+    Mobile(){};
+    ~Mobile(){};
 
     mob_rnum nr;                          /* Mob's rnum			  */
-    struct mob_special_data mob_specials;    /* NPC specials		  */
-
+    struct mob_special_data mob_specials; /* NPC specials		  */
 };
-
-
 
 /*
  *  If you want to add new values to the playerfile, do it here.  DO NOT
@@ -145,7 +128,6 @@ public:
 //    long	spare20;
 //    long	spare21;
 // };
-
 
 /* Special playing constants shared by PCs and NPCs which aren't in pfile */
 // struct char_special_data {
@@ -213,7 +195,6 @@ public:
 //    ubyte weight;       /* PC / NPC's weight                    */
 //    ubyte height;       /* PC / NPC's height                    */
 // };
-
 
 // /* Char's abilities.  Used in char_file_u *DO*NOT*CHANGE* */
 // struct char_ability_data {
